@@ -1,0 +1,287 @@
+{% extends "reduced_base.html" %}
+{% block content %}
+
+<div id="wrapper">  
+<div id="help_detail">
+
+<h1>Advanced Search Field Definitions</h1>
+  <p>The following search fields are available on the Advanced Search page. They are listed in the order in which they appear on the form. To view information on a search field, click on its name below. You can also click on the field label on the advanced search form to bring up a window containing information for that field. 
+  </p>
+  <ul>
+   <li><a href="#Search">Search Terms</a></li>
+   <li><a href="#Recruitment">Recruitment</a></li>
+   <li><a href="#Exclude">Exclude Unknown Status</a></li>
+   <li><a href="#StudyResults">Study Results</a></li>
+   <li><a href="#StudyType">Study Type</a></li>
+   <li><a href="#Conditions">Conditions</a></li>
+   <li><a href="#Interventions">Interventions</a></li>
+   <li><a href="#Title">Title Acronym/Titles</a></li>
+   <li><a href="#Outcome">Outcome Measures</a></li>
+   <li><a href="#SponsorsAndCollaborators">Sponsor/Collaborators</a></li>
+   <li><a href="#Sponsor">Sponsor (Lead)</a></li>
+   <li><a href="#StudyIDs">Study IDs</a></li>
+   <li><a href="#Country">Country/State</a></li>
+   <li><a href="#Location">Location Terms</a></li>
+   <li><a href="#Gender">Gender</a></li>
+   <li><a href="#Age">Age Group</a></li>
+   <li><a href="#Phase">Phase</a></li>
+   <li><a href="#Funder">Funder Type</a></li>
+   <li><a href="#Safety">Safety Issue</a></li>
+   <li><a href="#FirstReceived">First Received</a></li>
+   <li><a href="#LastUpdated">Last Updated</a></li>
+  </ul>
+
+<div id="Advanced_Search_Field_Definitions">
+
+  <p id="Search"><strong>Search Terms</strong> &#8212; Use this field to specify words or phrases related to the studies you want to find. Performs a general search of the study information, including title, brief description, conditions, interventions, and locations. This field is equal to the Basic Search box at the top of every page.
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+  <p id="Recruitment"><strong>Recruitment</strong> &#8212; Use this
+  field to specify whether you want to search for studies that are
+  open (recruiting participants) or closed (not recruiting
+  participants). You may select one of the following search options:</p>
+  <ul>
+    <p><li><strong>All Studies</strong> &#8212; All studies, whether they are recruiting new participants or not.</li></p>
+    <p><li><strong>Open Studies</strong> &#8212; Studies that are currently recruiting participants, will be recruiting participants in the future, or involve drugs that are available for expanded access. Recruitment statuses for open studies are:<br/>
+    <span>&nbsp; &#8212; Recruiting<br/>
+    &nbsp; &#8212; Not yet recruiting<br/>
+	&nbsp; &#8212; Available for expanded access</span><br/>
+	Note: For open studies, the word "Unknown," in brown text, means that a study record with a Recruiting or Not yet recruiting status has not been verified in ClinicalTrials.gov within the past 2 years.</p>
+    </li>
+    <p><li><strong>Closed Studies</strong> &#8212; Clinical studies that are no longer recruiting participants because they have enough participants already, because they are completed, or because they have been stopped for some reason. This also describes studies with very specific eligibility criteria that recruit participants by invitation only. Recruitment statuses for closed studies are:<br/>
+	<span>&nbsp; &#8212; Active, not recruiting<br />
+	&nbsp; &#8212; Completed<br />
+	&nbsp; &#8212; Terminated<br />
+	&nbsp; &#8212; Suspended<br />
+	&nbsp; &#8212; Withdrawn<br />
+	&nbsp; &#8212; Enrolling by invitation<br />
+	&nbsp; &#8212; Temporarily not available for expanded access<br />
+	&nbsp; &#8212; No longer available for expanded access<br />
+	&nbsp; &#8212; Approved for marketing</span> <br />
+	Note: For closed studies, the word "Unknown," in brown text, means that a study record with an Active, not recruiting status has not been verified in ClinicalTrials.gov within the past 2 years.
+    </p></li>
+    </ul>
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+  <p id="Exclude"><strong>Exclude Unknown Status</strong> &#8212; Use this field to remove studies with a recruitment status of Unknown from the search results. A status of Unknown identifies a clinical study in ClinicalTrials.gov with a status of Recruiting; Not yet recruiting; or Active, not recruiting and whose status has not been confirmed within the past 2 years. Studies with an Unknown recruitment status are considered open studies or closed studies, depending on their last recorded recruitment status. Selecting this field on the advanced search form is the same as marking the Only studies with confirmed recruitment statuses field at the top of the search results list.
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+  <p id="StudyResults"><strong>Study Results</strong> &#8212; Use this field to limit your search results based on whether a clinical study has results posted in the ClinicalTrials.gov results database. The field allows you to select one of the following:
+  <ul>
+    <p><li>All Studies</li></p>
+    <p><li>Studies With Results</li></p>
+    <p><li>Studies Without Results</li></p>
+  </ul>
+  A results database is a structured online system, such as the
+  ClinicalTrials.gov results database, that provides the public with
+  access to summary results and registration information for completed
+  or terminated clinical studies. Note: The ClinicalTrials.gov results database became available in September 2008. Older studies are unlikely to have results in the database.
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+  <p id="StudyType"><strong>Study Type</strong> &#8212; Use this field to limit your search to one of the following clinical study types:
+  <ul>
+    <p><li><strong>Interventional Study (or Clinical Trial)</strong> &#8212; A clinical study in which participants are assigned to receive one or more interventions (or no intervention) so that researchers can evaluate the effects of the interventions on biomedical or health-related outcomes. The assignments are determined by the study protocol. Participants may receive diagnostic, therapeutic, or other types of interventions.
+    </p></li>
+    <p><li><strong>Observational Study</strong> &#8212; A clinical study in which participants identified as belonging to study groups are assessed for biomedical or health outcomes. Participants may receive diagnostic, therapeutic, or other types of interventions, but the investigator does not assign participants to specific interventions (as in an interventional study).
+    <ul>
+      <p><li><strong>Patient Registry</strong> &#8212; A type of Observational Study that collects uniform data prospectively for a population defined by a particular disorder/disease, condition, or exposure and that serves a predetermined scientific, clinical, or policy purpose.
+      </p></li>
+    </ul>
+    </p></li>
+    <p><li><strong>Expanded Access</strong> &#8212; A process
+  regulated by the Food and Drug Administration (FDA) that allows
+  manufacturers to provide investigational new drugs to patients with
+  serious diseases or conditions who cannot participate in a clinical
+  trial. For more information on expanded access programs, please
+  visit the <a
+  href="http://www.fda.gov/ForConsumers/ByAudience/ForPatientAdvocates/AccesstoInvestigationalDrugs/default.htm"
+  target="_blank">FDA</a> website.
+    </p></li>
+  </ul>
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+  <p id="Conditions"><strong>Conditions</strong> &#8212; Use this field to specify
+a disease, disorder, syndrome, illness, or injury that is being studied. In ClinicalTrials.gov, conditions may also include other health-related issues such as lifespan, quality of life, and health risks.
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+  <p id="Interventions"><strong>Interventions</strong> &#8212; Use this field to specify
+a process or action that is the focus of a clinical study. This can
+include giving participants drugs, medical devices, procedures,
+vaccines, and other products that are either investigational or
+already available. Interventions can also include noninvasive
+approaches such as surveys, education, and interviews. Examples: "clofibrate", "cyclosporine", "vitamin E", "pacemaker", "PET scan".
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+  <p id="Title"><strong>Title Acronym/Titles</strong> &#8212; Use this
+  field to specify the study title acronym or an exact phrase from the
+  brief or official title of the study you want to find. Example: "WHI".
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+  <p id="Outcome"><strong>Outcome Measures</strong> &#8212; Use this field to specify
+a measurement decided on in advance that is used to determine the effect of interventions on participants in a clinical trial. 
+For observational studies, a measurement or observation that is used to describe patterns of diseases or traits, or associations with exposures, risk factors, or treatment. 
+Types of outcome measures include primary outcome measure and
+secondary outcome measure. Examples: "weight loss", "ejection fraction", "muscle strength".
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+  <p id="Sponsor"><strong>Sponsor (Lead)</strong> &#8212; Use this field to specify the Sponsor(Lead). A sponsor is the organization or person (a Sponsor-Investigator) who oversees the clinical study and is responsible for analyzing the study data.
+  <ul>
+    <li><strong>Exact Match</strong> &#8212; Use this field to indicate that the sponsor name listed in the study must exactly match the sponsor name entered in the search field.
+For example, if this field is not marked, a search with "Merck" in the Sponsor (Lead) field will find studies with Merck, Merck KGaA, Dupont Merck, and Merck Sharp & Dohme listed as the sponsor. If the field is marked, only studies with Merck listed as the lead sponsor (with no other words in the name) will be included in the search results.
+    </li>
+  </ul>
+  Examples: "National Cancer Institute", "Mayo Clinic", "Bristol-Myers Squibb".
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+  <p id="SponsorsAndCollaborators"><strong>Sponsor and Collaborators</strong> &#8212; Use this field to specify the Sponsor (Lead) or Collaborator. A sponsor is the organization or person (a Sponsor-Investigator) who oversees the clinical study and is responsible for analyzing the study data. A collaborator is an organization other than the sponsor that provides support for a clinical study. This may include funding, design, implementation, data analysis, or reporting.
+  <ul>
+    <p><li><strong>Exact Match</strong> &#8212; Use this field to indicate that the sponsor name listed in the study must exactly match the sponsor name entered in the search field.
+For example, if this field is not marked, a search with "Merck" in the Sponsor (Lead) field will find studies with Merck, Merck KGaA, Dupont Merck, and Merck Sharp & Dohme listed as the sponsor. If the field is marked, only studies with Merck listed as the lead sponsor (with no other words in the name) will be included in the search results.
+    </p></li>
+  </ul>
+  Examples: "National Cancer Institute", "Mayo Clinic", "Bristol-Myers Squibb".
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+  <p id="StudyIDs"><strong>Study IDs</strong> &#8212; Use this field
+  to search for a clinical study by an identification number. Every clinical study is associated with identification numbers assigned to the clinical study protocol by the sponsor, funders, or others. These include unique identifiers from other registries and National Institutes of Health grant numbers. In addition, ClinicalTrials.gov assigns a ClinicalTrials.gov Identifier, or NCT Number, a unique identification code given to each clinical study registered on ClinicalTrials.gov. The format is the letters "NCT" followed by an 8-digit number (for example, "NCT00000419").
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+  <p id="Country"><strong>Country/State</strong> &#8212; Studies are often conducted in many locations around the world. Use this field to select up to three locations to find studies conducted in specific countries. For some countries, you can narrow your search by selecting a state or province. This feature is currently available for the United States, Canada, and Australia only.</p>
+    <p><strong>Examples: </strong></p>
+      <p class="example"><strong>Country:</strong> United States</p>
+      <p class="example"><strong>State:</strong> Alabama</p>
+      <p class="example"><strong>State:</strong> United States, Alabama</p>
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+  <p id="Location"><strong>Location Terms</strong> &#8212; If you are interested in a specific city (such as Los Angeles) or facility (such as the Mayo Clinic), enter it as a location term. Note: Not all studies include this level of detail.
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+  <p id="Gender"><strong>Gender</strong> &#8212; Use this field to limit your search by
+the physical gender of persons who may participate in the study
+(female, male, or both). Options:
+  <ul>
+    <p><li>All Studies</li></p>
+    <p><li>Studies with Female Participants</li></p>
+    <p><li>Studies with Male Participants</li></p>
+  </ul>
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+  <p id="Age"><strong>Age Group</strong> &#8212; Use this field to
+  limit your search results to studies that accept participants from
+  selected age groups. You can select more than one age group. If more
+  than one age group is selected, the search results will include
+  studies that accept at least one of the age groups you indicated. If
+  you do not select any particular age group, all age groups will be
+  included in your search results. The age groups are:
+  <ul>
+    <p><li>Children (birth-17 years old)</li></p>
+    <p><li>Adults (18-65 years old)</li></p>
+    <p><li>Seniors (66+ years old)</li></p>
+  </ul>
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+  <p id="Phase"><strong>Phase</strong> &#8212; Use this field to
+  select the study phase you want to include in your search. You can
+  select more than one study phase. If you do not select any study
+  phase, all study phases, including Phase 0, will be included in your
+  search results. Phases are <a
+  href="http://www.fda.gov/drugs/resourcesforyou/consumers/ucm143534.htm"
+  target="_blank">Food and Drug Administration (FDA) categories</a>
+  for describing the study of a drug based on the study's characteristics, such as the objective and number of participants. There are five phases:</p>
+  <ul>
+    <p><li>Phase 0: Exploratory study involving very limited human exposure to the drug, with no therapeutic or diagnostic goals (for example, screening studies, microdose studies).</p></li>
+    <p><li>Phase 1: Studies that are usually conducted with healthy volunteers and that emphasize safety. The goal is to find out what the drug's most frequent adverse events are and, often, how the drug is metabolized and excreted.</p></li>
+    <p><li>Phase 2: Studies that gather preliminary data on effectiveness (whether the drug works in people who have a certain disease or condition). For example, participants receiving the drug may be compared with similar participants receiving a different treatment, usually an inactive substance (called a placebo) or a different drug. Safety continues to be evaluated, and short-term adverse events are studied.</p></li>
+    <p><li>Phase 3: Studies that gather more information about safety and effectiveness by studying different populations and different dosages and by using the drug in combination with other drugs.</p></li>
+    <p><li>Phase 4: Studies occurring after FDA has approved a drug for marketing. 
+These include postmarket requirement and commitment studies that are required of or agreed to by the sponsor. These studies gather additional information about a drug's safety, efficacy, or optimal use.</p></li>
+  </ul>
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+  <p id="Funder"><strong>Funder Type</strong> &#8212; Use this field
+  to select the funder type you want to include in your search. You
+  can select more than one funder type. If you do not select any
+  funder type, all funder types will be included in your search
+  results. Each funder type describes the organization that provides
+  funding or support for the study. "Support" may include providing
+  facilities, expertise, or financial resources. Organizations listed as sponsors and collaborators for a study are considered the funders of the study. There are four types of funders:</p>
+  <ul>
+    <p><li>National Institutes of Health (NIH)</li></p>
+    <p><li>Other U.S. Federal Agency (for example, the Food and Drug Administration, Centers for Disease Control and Prevention, U.S. Department of Veterans Affairs)</p></li>
+    <p><li>Industry (pharmaceutical and device companies) </p></li>
+    <p><li>All others (including individuals, universities, and community-based organizations)</p></li>
+  </ul>
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+  <p id="Safety"><strong>Safety Issue</strong> &#8212; Use this field to limit your search results to studies that have an outcome measure that is designated as a safety issue.
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+  <p id="FirstReceived"><strong>First Received</strong> &#8212;
+  Specify a From date to find studies submitted to ClinicalTrials.gov
+  on or after that date. Specify a To date to find studies submitted
+  on or before that date. Specify both From and To dates to find
+  studies submitted during a certain time period. If no dates are
+  entered, all studies will be included in your search results. Dates
+  should be entered in MM/DD/YYYY format. For example, March 1, 2006,
+  is entered as "03/01/2006". The first received date is
+  the date that summary clinical study protocol information was first
+  submitted to the ClinicalTrials.gov registry. There may be a delay
+  of a few days before the study information is available on ClinicalTrials.gov.
+  </p>
+
+<div id="totop"><a href="#wrapper">To Top</a></div>
+
+<p id="LastUpdated"><strong>Last Updated</strong> &#8212; Specify a
+  From date to find studies updated on ClinicalTrials.gov on or after
+  that date. Specify a To date to find studies updated on or before
+  that date. Specify both From and To dates to find studies that were
+  updated during a certain time period. If no dates are entered, all
+  studies will be included in your search results. Dates should be
+  entered in MM/DD/YYYY format. For example, March 1, 2006, is entered
+  as "03/01/2006". The last updated date is the most recent date that
+  changes to study information were submitted to
+  ClinicalTrials.gov. There may be a delay of a few days to a few
+  weeks before the updated study information is available on
+  ClinicalTrials.gov. This date may be different from the last verified date.
+  </p>
+<div id="totop"><a href="#wrapper">To Top</a></div>
+</div>
+</div>
+{% endblock %}

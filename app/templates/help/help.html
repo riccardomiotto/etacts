@@ -1,0 +1,109 @@
+{% extends "reduced_base.html" %}
+{% block content %}
+
+<div id="wrapper">  
+<div id="help_detail">
+<h1>How to Use Advanced Search</h1>
+
+<h3>Contents</h3>
+  <ul>
+    <li><a href="#HowToUse">How to Use the Advanced Search Form</a> </li>
+    <li><a href="#Fields">Advanced Search Fields</a> </li>
+    <li><a href="#Operators">Searches Using the Operators AND, OR, and NOT</a> </li>
+  </ul>
+
+<h3 id="HowToUse">How to Use the Advanced Search Form</h3>
+  <p>The Advanced Search form lets you focus your search, giving you more control over the results.</p>
+  <p>You can use the multiple search fields on the advanced search form to narrow or broaden your results. 
+For example, you can specify the condition, recruitment status, age group of participants, and location where studies are conducted. 
+See the <a href="definitions" target="_blank">Advanced Search Field Definitions</a> for a complete list of options.
+  </p>
+  <ul>
+	<li>Enter your search terms in one or more fields and click the <strong>Search</strong> button.</li>
+	<li>A list of search results will be displayed. The total number of studies found is shown at the top, along with your search terms.</li>
+    <li>The first column of the search results list, Rank, indicates the order in which the studies are listed. Studies that most closely match your search terms are listed first. The Status column shows which studies are open, or recruiting new volunteers, and which studies are closed, or not recruiting new volunteers.</li>
+  </ul>
+<h3>Tips</h3>
+  <ul>
+    <li>You do not need to fill in all the search fields. Complete only the fields that are needed for your search.</li>
+    <li>To do a basic search using the Advanced Search form, fill in the first field, labeled Search Terms.</li>
+    <li>Click on a field label, such as Recruitment, to learn more about that field.</li>
+    <li>Try using operators such as <a href="#Operators">AND, OR, and NOT</a> to broaden or narrow your search.</li>
+    <li>If your search results do not include enough studies, consider clearing one or more search fields on the form and trying the search again.</li>
+  </ul>
+
+<h3 id="Fields">Advanced Search Fields</h3>
+  <p>The following search fields are available on the Advanced Search page. They are listed in the order in which they appear on the form. To view information on a search field, click on its name below or see the <a
+href="definitions" target="blank">Advanced Search Field Definitions</a> page. You can also click on the field label on the advanced search form to bring up a window containing information for that field. 
+  </p>
+  <ul>
+   <li><a href="definitions#Search" target="_blank">Search Terms</a></li>
+   <li><a href="definitions#Recruitment" target="_blank">Recruitment</a></li>
+   <li><a href="definitions#Exclude" target="_blank">Exclude Unknown Status</a></li>
+   <li><a href="definitions#StudyResults" target="_blank">Study Results</a></li>
+   <li><a href="definitions#StudyType" target="_blank">Study Type</a></li>
+   <li><a href="definitions#Conditions" target="_blank">Conditions</a></li>
+   <li><a href="definitions#Interventions" target="_blank">Interventions</a></li>
+   <li><a href="definitions#Title" target="_blank">Title Acronym/Titles</a></li>
+   <li><a href="definitions#Outcome" target="_blank">Outcome Measures</a></li>
+   <li><a href="definitions#SponsorsAndCollaborators" target="_blank">Sponsor/Collaborators</a></li>
+   <li><a href="definitions#Sponsor" target="_blank">Sponsor (Lead)</a></li>
+   <li><a href="definitions#StudyIDs" target="_blank">Study IDs</a></li>
+   <li><a href="definitions#Country" target="_blank">Country/State</a></li>
+   <li><a href="definitions#Location" target="_blank">Location Terms</a></li>
+   <li><a href="definitions#Gender" target="_blank">Gender</a></li>
+   <li><a href="definitions#Age" target="_blank">Age Group</a></li>
+   <li><a href="definitions#Phase" target="_blank">Phase</a></li>
+   <li><a href="definitions#Funder" target="_blank">Funder Type</a></li>
+   <li><a href="definitions#Safety" target="_blank">Safety Issue</a></li>
+   <li><a href="definitions#FirstReceived" target="_blank">First Received</a></li>
+   <li><a href="definitions#LastUpdated" target="_blank">Last Updated</a></li>
+  </ul>
+
+<h3 id="Operators">Searches Using the Operators AND, OR, and NOT</h3>
+  <p>Words such as AND, OR, and NOT (in all uppercase letters), called "operators," tell the ClinicalTrials.gov search function how the words in your search relate to each other. 
+  </p>
+  <ul>
+    <li class="spaced">
+     <p>Use <strong>AND</strong> to find study records that contain all the words connected by <strong>AND</strong>.</p>
+     <p class="example"><span class="underline">Example</span>: "prostate cancer AND
+  radiation"</p><p>This search finds study records that contain
+  information
+    on both prostate cancer and radiation. Using <strong>AND</strong> narrows your search.</p>
+    </li>
+    <li class="spaced"><p>Use <strong>OR</strong> to find study records that contain either word connected by <strong>OR</strong>.</p>
+    <p class="example"><span class="underline">Example</span>: "aspirin OR ibuprofen"</p>
+    <p>This search finds study records containing either the word "aspirin" or the word "ibuprofen." Using <strong>OR</strong> broadens your search.</p>
+    </li>
+    <li class="spaced"><p>Use <strong>NOT</strong> to find study records that do not contain the word following <strong>NOT</strong>.</p>
+    <p class="example"><span class="underline">Example</span>: "immunodeficiency NOT AIDS"</p>
+    <p>This search finds study records containing the word
+  "immunodeficiency" but excludes records containing the word "AIDS"
+  from the search results.</p>
+    </li>
+  </ul>
+
+  <ul>
+    <li class="spaced"><p>Use <strong>AND</strong>, <strong>OR</strong>,
+    <strong>NOT</strong>, and parentheses to create more complicated
+    search expressions. Use parentheses in searches that contain more
+    than one operator (AND, OR, NOT). This means that the words that
+    are together in parentheses will be treated as a unit.</p>
+    <p class="example"><span class="underline">Example</span>: "(heart disease OR heart attack) AND (stroke OR clot)"</p>
+    <p>This search finds study records containing either the phrase
+    "heart disease" or "heart attack" as well as records
+    containing either the word "stroke" or the word "clot."</p>
+    </li>
+	<li class="spaced"><p>Using <strong>AND</strong> and <strong>OR</strong> as
+    operators can sometimes be confusing. The correct way to search
+    for a phrase such as: "Ear, Nose, and Throat Conditions" is to
+    enter: "(Ear OR Nose OR Throat) AND Conditions". However, the search will still recognize the phrase "Ear, Nose, and Throat".</p>
+    </li>
+    <li><p>To search for <em>and</em> as a word, instead of using it as an operator, put it in quotation marks.
+	You can search for <em>or</em>, <em>not</em>, and parentheses in the same way.</p>
+	</li>
+  </ul>
+  <div id="totop"><a href="#wrapper">To Top</a></div>
+</div>
+</div>
+{% endblock %}

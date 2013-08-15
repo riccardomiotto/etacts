@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="search_form">
+  <p id="ctgov_detail">
+    <a href="http://www.clinicaltrials.gov" target="_blank">ClinicalTrials.gov</a> currently lists <span id="ctgov_number">{{nnct}}</span> studies
+  </p>
+  <p id="search_detail"> Search for studies {{form.search_text(size=50) | safe}}
+  <input type="button" class="sbutton" id="search_button" value="Search">
+  <input type="button" class="sbutton" id="advsearch_button" value="Advanced Search"></p>
+
+  <p id="search_example"> example: "Heart attack" AND "Los Angeles"</p>
+</div>
+
+<div id="adv_search_detail">{% include "advsearch.html" %}</div>
+
+<div id="tag_cloud_container">
+  <div id="tc_box">
+    <div id="tag_role">
+      <ul>
+	       <li><p id="inc" class="trole"> Inclusion Criteria </p></li>
+	       <li><p id="exc" class="trole"> Exclusion Criteria </p></li>
+	     </ul>
+    </div>
+    <div id="tag_cloud"></div>
+    <div id="tag_category">
+      <ul>
+	<li><p id="all" class="tag_type"> All </p></li>
+	<li><p id="disorders" class="tag_type"> Disorders </p></li>
+	<li><p id="lab" class="tag_type"> Laboratory and Tests </p></li>
+	<li><p id="procedures" class="tag_type"> Procedures </p></li>
+	<li><p id="drugs" class="tag_type"> Chemical and Drugs </p></li>
+	<li><p id="others" class="tag_type last" class="last"> Others </p></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="tag_selection">
+    <p id="close_tag_cloud"> close </p>
+    <p id="selected_tags_title"> Selected Tags: </p>
+    <div id="selected_tags"></div>
+  </div>
+</div><div id="header_results"></div>
+<div id="results"></div>
+<div id="filter_header_results"></div>
+<div id="filter_results"></div>
+<div class="loader"><span></span><span></span><span></span></div>
+
+{% endblock %}   

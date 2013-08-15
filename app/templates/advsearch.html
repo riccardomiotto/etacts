@@ -1,0 +1,1088 @@
+<!-- ====== Advanced Search Form ====== -->
+
+<div id="close_advs"><input type="button" id="back_button" class="sbutton" type="button" value="Close"/></div>
+<p class="advs_header"> Fill in any or all of the fields below then click one of the <strong>Search</strong> buttons.</p>
+<p class="advs_header"> Read the <a href="/etacts/help" class="help_link" title="Show search help" target="_blank"><strong>Help</strong></a> or click on the label to the left of the search fields for further explanations.</p>
+
+<form id="advanced_search" name="adv_search" method="post" action="advform">
+
+<table id="ctgov_detail" class="layout_table">
+
+    <!-- Search Terms -->
+    <tr>
+      <td class="adv_form_fields">
+	<a href="etacts/definitions#Search" class="adv_form_link" title="Help
+	for Search Terms search field" target="_blank">Search Terms</a>:
+      </td>
+      <td>
+        <input type="text" class="input_field field_text" name="term" id="first_focus" value="" />
+	<input type="button" class="sbutton asearch" title="Submit Search" value="Search"/>
+      </td>
+    </tr>
+
+    <!-- Recruitment -->
+    <tr>
+      <td class="adv_form_fields">
+	<a href="etacts/definitions#Recruitment" class="adv_form_link" title="Help for Recruitment search field" target="_blank">Recruitment</a>:
+      </td>
+      <td>
+        <select class="input_field" name="recr" id="Recruitment">
+        <option value=""  selected="selected">All Studies &nbsp;</option>
+        <option value="Open">Open Studies &nbsp;</option>
+        <option value="Recruiting">&nbsp; -- Recruiting  &nbsp;</option>            
+        <option value="Not yet recruiting">&nbsp; -- Not yet recruiting  &nbsp;</option>            
+        <option value="Available">&nbsp; -- Expanded Access: Available  &nbsp;</option>
+        <option value="Closed">Closed Studies &nbsp;</option>
+        <option value="Active, not recruiting">&nbsp; -- Active, not recruiting  &nbsp;</option>
+        <option value="Completed">&nbsp; -- Completed  &nbsp;</option>
+        <option value="Enrolling by invitation">&nbsp; -- Enrolling by invitation  &nbsp;</option>
+        <option value="Suspended">&nbsp; -- Suspended  &nbsp;</option>
+        <option value="Terminated">&nbsp; -- Terminated  &nbsp;</option>
+        <option value="Withdrawn">&nbsp; -- Withdrawn  &nbsp;</option>
+        <option value="No longer available">&nbsp; -- Expanded Access: No longer available  &nbsp;</option>
+        <option value="Temporarily not available">&nbsp; -- Expanded Access: Temporarily not available  &nbsp;</option>
+        </select><input class="additional_check1" type="checkbox" name="no_unk" id="NoUnknown" value="Y" /><span class="small"> exclude unknown status</span>
+      </td>
+    </tr>
+
+    <!-- Study Results -->
+    <tr>
+      <td class="adv_form_fields">
+         <a href="etacts/definitions#StudyResults" class="adv_form_link" title="Help for Study Results search field" target="_blank">Study Results</a>:
+      </td>
+      <td>
+        <select class="input_field" name="rslt" id="StudyResults">
+          <option value="">All Studies &nbsp;</option>
+          <option value="With">Studies With Results &nbsp;</option>
+          <option value="Without">Studies Without Results &nbsp;</option>
+        </select>
+      </td>
+    </tr>
+
+    <!-- Study Type -->
+    <tr>
+      <td class="adv_form_fields">
+        <a href="etacts/definitions#StudyType" class="adv_form_link" title="Help for Study Type search field" target="_blank">Study Type</a>:
+      </td>
+      <td>
+        <select class="input_field" name="type" id="StudyType">
+          <option value="">All Studies &nbsp;</option>
+          <option value="Intr">Interventional Studies &nbsp;</option>
+          <option value="Obsr">Observational Studies &nbsp;</option>
+          <option value="PReg">&nbsp; -- Patient Registries &nbsp;</option>
+          <option value="Expn">Expanded Access Studies &nbsp;</option>
+        </select>
+      </td>
+    </tr>
+
+<!-- ====== Targeted Fields ====== -->
+
+    <tr><td class="advs_type_title">Targeted Search:</td></tr>
+
+    <!-- Conditions -->
+    <tr>
+      <td class="adv_form_fields">
+	<a href="etacts/definitions#Conditions" class="adv_form_link" title="Help for Conditions search field" target="_blank">Conditions</a>:
+      </td>
+      <td>
+        <input class="input_field field_text" type="text" name="cond" id="Conditions"/>
+      </td>
+    </tr>
+
+    <!-- Interventions -->
+    <tr>
+      <td class="adv_form_fields">
+	<a href="etacts/definitions#Interventions" class="adv_form_link" title="Help for Interventions search field" target="_blank">Interventions</a>:
+      </td>
+      <td>
+        <input class="input_field field_text" type="text" name="intr" id="Interventions" value=""/>
+      </td>
+    </tr>
+
+    <!-- Title Acronym/Titles -->
+    <tr>
+      <td class="adv_form_fields">
+	<a href="etacts/definitions#Title" class="adv_form_link" title="Help for Title Acronym or Titles search field" target="_blank">Title Acronym/Titles</a>:
+      </td>
+      <td>
+        <input class="input_field field_text" type="text" name="titles" id="Titles" value=""/>
+      </td>
+    </tr>
+
+    <!-- Outcome Measures -->
+    <tr>
+      <td class="adv_form_fields">
+	<a href="etacts/definitions#Outcome" class="adv_form_link" title="Help for Outcome Measures search field" target="_blank">Outcome Measures</a>:
+      </td>
+      <td>
+        <input class="input_field field_text" type="text" name="outc" id="OutcomeMeasures" value=""/>
+      </td>
+    </tr>
+
+    <!-- Sponsor/Collaborators -->
+    <tr>
+      <td class="adv_form_fields">
+	<a href="etacts/definitions#SponsorsAndCollaborators" class="adv_form_link" title="Help for Sponsor/Collaborators search field" target="_blank">Sponsor/Collaborators</a>:
+      </td>
+      <td>
+        <input class="input_field field_text" type="text" name="spons" id="Sponsors" value="">
+	<input class="additional_check2" type="checkbox" name="spons_ex" id="SponsorsExact" value="Y" /><span class="small"> exact match </span>
+      </td>
+    </tr>
+
+    <!-- Sponsor (Lead) -->
+    <tr>
+      <td class="adv_form_fields">
+	<a href="etacts/definitions#Sponsor" class="adv_form_link" title="Help for Sponsor search field" target="_blank">Sponsor (Lead)</a>:
+      </td>
+      <td>
+        <input class="input_field field_text" type="text" name="lead" id="LeadSponsors" value=""/>
+	<input class="additional_check2" type="checkbox" name="lead_ex"
+	id="LeadSponsorsExact" value="Y" /><span class="small"> exact match </span>
+      </td>
+    </tr>
+
+    <!-- Study IDs -->
+    <tr>
+      <td class="adv_form_fields">
+	<a href="etacts/definitions#StudyIDs" class="adv_form_link" title="Help for Study IDs search field" target="_blank">Study IDs</a>:
+      </td>
+      <td>
+        <input class="input_field field_text" type="text" name="id" id="StudyIds" value=""/>
+      </td>
+    </tr>
+
+<!-- ====== Locations Fields ====== -->
+
+    <tr><td class="advs_type_title">Locations:</td></tr>
+
+    <!-- State 1 -->
+    <tr>
+      <td class="adv_form_fields">
+	<a href="etacts/definitions#Country" class="adv_form_link" title="Help for State search field" target="_blank">State 1</a>:
+      </td>
+      <td>
+        <select class="input_field" name="state1" id="State1">
+          <option value=""  selected="selected">--- Optional --- &nbsp;</option>
+          <option value="NA:US:AL">United States, Alabama &nbsp;</option>
+          <option value="NA:US:AK">United States, Alaska &nbsp;</option>
+          <option value="NA:US:AZ">United States, Arizona &nbsp;</option>
+          <option value="NA:US:AR">United States, Arkansas &nbsp;</option>
+          <option value="NA:US:CA">United States, California &nbsp;</option>
+          <option value="NA:US:CO">United States, Colorado &nbsp;</option>
+          <option value="NA:US:CT">United States, Connecticut &nbsp;</option>
+          <option value="NA:US:DE">United States, Delaware &nbsp;</option>
+          <option value="NA:US:DC">United States, District of Columbia &nbsp;</option>
+          <option value="NA:US:FL">United States, Florida &nbsp;</option>
+          <option value="NA:US:GA">United States, Georgia &nbsp;</option>
+          <option value="NA:US:HI">United States, Hawaii &nbsp;</option>
+          <option value="NA:US:ID">United States, Idaho &nbsp;</option>
+          <option value="NA:US:IL">United States, Illinois &nbsp;</option>
+          <option value="NA:US:IN">United States, Indiana &nbsp;</option>
+          <option value="NA:US:IA">United States, Iowa &nbsp;</option>
+          <option value="NA:US:KS">United States, Kansas &nbsp;</option>
+          <option value="NA:US:KY">United States, Kentucky &nbsp;</option>
+          <option value="NA:US:LA">United States, Louisiana &nbsp;</option>
+          <option value="NA:US:ME">United States, Maine &nbsp;</option>
+          <option value="NA:US:MD">United States, Maryland &nbsp;</option>
+          <option value="NA:US:MA">United States, Massachusetts &nbsp;</option>
+          <option value="NA:US:MI">United States, Michigan &nbsp;</option>
+          <option value="NA:US:MN">United States, Minnesota &nbsp;</option>
+          <option value="NA:US:MS">United States, Mississippi &nbsp;</option>
+          <option value="NA:US:MO">United States, Missouri &nbsp;</option>
+          <option value="NA:US:MT">United States, Montana &nbsp;</option>
+          <option value="NA:US:NE">United States, Nebraska &nbsp;</option>
+          <option value="NA:US:NV">United States, Nevada &nbsp;</option>
+          <option value="NA:US:NH">United States, New Hampshire &nbsp;</option>
+          <option value="NA:US:NJ">United States, New Jersey &nbsp;</option>
+          <option value="NA:US:NM">United States, New Mexico &nbsp;</option>
+          <option value="NA:US:NY">United States, New York &nbsp;</option>
+          <option value="NA:US:NC">United States, North Carolina &nbsp;</option>
+          <option value="NA:US:ND">United States, North Dakota &nbsp;</option>
+          <option value="NA:US:OH">United States, Ohio &nbsp;</option>
+          <option value="NA:US:OK">United States, Oklahoma &nbsp;</option>
+          <option value="NA:US:OR">United States, Oregon &nbsp;</option>
+          <option value="NA:US:PA">United States, Pennsylvania &nbsp;</option>
+          <option value="NA:US:RI">United States, Rhode Island &nbsp;</option>
+          <option value="NA:US:SC">United States, South Carolina &nbsp;</option>
+          <option value="NA:US:SD">United States, South Dakota &nbsp;</option>
+          <option value="NA:US:TN">United States, Tennessee &nbsp;</option>
+          <option value="NA:US:TX">United States, Texas &nbsp;</option>
+          <option value="NA:US:UT">United States, Utah &nbsp;</option>
+          <option value="NA:US:VT">United States, Vermont &nbsp;</option>
+          <option value="NA:US:VA">United States, Virginia &nbsp;</option>
+          <option value="NA:US:WA">United States, Washington &nbsp;</option>
+          <option value="NA:US:WV">United States, West Virginia &nbsp;</option>
+          <option value="NA:US:WI">United States, Wisconsin &nbsp;</option>
+          <option value="NA:US:WY">United States, Wyoming &nbsp;</option>
+          <option value="NA:CA:AB">Canada, Alberta &nbsp;</option>
+          <option value="NA:CA:BC">Canada, British Columbia &nbsp;</option>
+          <option value="NA:CA:MB">Canada, Manitoba &nbsp;</option>
+          <option value="NA:CA:NB">Canada, New Brunswick &nbsp;</option>
+          <option value="NA:CA:NF">Canada, Newfoundland and Labrador &nbsp;</option>
+          <option value="NA:CA:NS">Canada, Nova Scotia &nbsp;</option>
+          <option value="NA:CA:ON">Canada, Ontario &nbsp;</option>
+          <option value="NA:CA:PE">Canada, Prince Edward Island &nbsp;</option>
+          <option value="NA:CA:QC">Canada, Quebec &nbsp;</option>
+          <option value="NA:CA:SK">Canada, Saskatchewan &nbsp;</option>
+          <option value="PA:AU:AC">Australia, Australian Capital Territory &nbsp;</option>
+          <option value="PA:AU:SW">Australia, New South Wales &nbsp;</option>
+          <option value="PA:AU:NT">Australia, Northern Territory &nbsp;</option>
+          <option value="PA:AU:QL">Australia, Queensland &nbsp;</option>
+          <option value="PA:AU:SA">Australia, South Australia &nbsp;</option>
+          <option value="PA:AU:TA">Australia, Tasmania &nbsp;</option>
+          <option value="PA:AU:VC">Australia, Victoria &nbsp;</option>
+          <option value="PA:AU:WA">Australia, Western Australia &nbsp;</option>
+        </select>
+      </td>
+    </tr>
+    <!-- Country 1 -->
+    <tr>
+      <td class="adv_form_fields">
+	<a href="etacts/definitions#Country" class="adv_form_link" title="Help for Country search field" target="_blank">Country 1</a>:
+      </td>
+      <td>
+        <select class="input_field" name="cntry1" id="Country1">
+          <option value=""  selected="selected">--- Optional --- &nbsp;</option>
+          <option value="NA:US">United States &nbsp;</option>
+          <option value="SS:AF">Afghanistan &nbsp;</option>
+          <option value="EU:AL">Albania &nbsp;</option>
+          <option value="AF:DZ">Algeria &nbsp;</option>
+          <option value="PA:AS">American Samoa &nbsp;</option>
+          <option value="EU:AD">Andorra &nbsp;</option>
+          <option value="AF:AO">Angola &nbsp;</option>
+          <option value="SA:AR">Argentina &nbsp;</option>
+          <option value="NS:AM">Armenia &nbsp;</option>
+          <option value="PA:AU">Australia &nbsp;</option>
+          <option value="EU:AT">Austria &nbsp;</option>
+          <option value="NS:AZ">Azerbaijan &nbsp;</option>
+          <option value="CA:BS">Bahamas &nbsp;</option>
+          <option value="ME:BH">Bahrain &nbsp;</option>
+          <option value="SS:BD">Bangladesh &nbsp;</option>
+          <option value="CA:BB">Barbados &nbsp;</option>
+          <option value="NS:BY">Belarus &nbsp;</option>
+          <option value="EU:BE">Belgium &nbsp;</option>
+          <option value="CA:BZ">Belize &nbsp;</option>
+          <option value="AF:BJ">Benin &nbsp;</option>
+          <option value="CA:BM">Bermuda &nbsp;</option>
+          <option value="SS:BT">Bhutan &nbsp;</option>
+          <option value="SA:BO">Bolivia &nbsp;</option>
+          <option value="EU:BA">Bosnia and Herzegovina &nbsp;</option>
+          <option value="AF:BW">Botswana &nbsp;</option>
+          <option value="SA:BR">Brazil &nbsp;</option>
+          <option value="SE:BN">Brunei Darussalam &nbsp;</option>
+          <option value="EU:BG">Bulgaria &nbsp;</option>
+          <option value="AF:BF">Burkina Faso &nbsp;</option>
+          <option value="AF:BI">Burundi &nbsp;</option>
+          <option value="SE:KH">Cambodia &nbsp;</option>
+          <option value="AF:CM">Cameroon &nbsp;</option>
+          <option value="NA:CA">Canada &nbsp;</option>
+          <option value="AF:CF">Central African Republic &nbsp;</option>
+          <option value="AF:TD">Chad &nbsp;</option>
+          <option value="SA:CL">Chile &nbsp;</option>
+          <option value="ES:CN">China &nbsp;</option>
+          <option value="SA:CO">Colombia &nbsp;</option>
+          <option value="AF:CG">Congo &nbsp;</option>
+          <option value="AF:CD">Congo, The Democratic Republic of the &nbsp;</option>
+          <option value="CA:CR">Costa Rica &nbsp;</option>
+          <option value="EU:HR">Croatia &nbsp;</option>
+          <option value="CA:CU">Cuba &nbsp;</option>
+          <option value="ME:CY">Cyprus &nbsp;</option>
+          <option value="EU:CZ">Czech Republic &nbsp;</option>
+          <option value="AF:CI">C&#244;te D'Ivoire &nbsp;</option>
+          <option value="EU:DK">Denmark &nbsp;</option>
+          <option value="AF:DJ">Djibouti &nbsp;</option>
+          <option value="CA:DO">Dominican Republic &nbsp;</option>
+          <option value="SA:EC">Ecuador &nbsp;</option>
+          <option value="AF:EG">Egypt &nbsp;</option>
+          <option value="CA:SV">El Salvador &nbsp;</option>
+          <option value="AF:GQ">Equatorial Guinea &nbsp;</option>
+          <option value="EU:EE">Estonia &nbsp;</option>
+          <option value="AF:ET">Ethiopia &nbsp;</option>
+          <option value="PA:FJ">Fiji &nbsp;</option>
+          <option value="EU:FI">Finland &nbsp;</option>
+          <option value="EU:CS">Former Serbia and Montenegro &nbsp;</option>
+          <option value="EU:YU">Former Yugoslavia &nbsp;</option>
+          <option value="EU:FR">France &nbsp;</option>
+          <option value="PA:PF">French Polynesia &nbsp;</option>
+          <option value="AF:GA">Gabon &nbsp;</option>
+          <option value="AF:GM">Gambia &nbsp;</option>
+          <option value="NS:GE">Georgia &nbsp;</option>
+          <option value="EU:DE">Germany &nbsp;</option>
+          <option value="AF:GH">Ghana &nbsp;</option>
+          <option value="EU:GR">Greece &nbsp;</option>
+          <option value="CA:GD">Grenada &nbsp;</option>
+          <option value="CA:GP">Guadeloupe &nbsp;</option>
+          <option value="CA:GT">Guatemala &nbsp;</option>
+          <option value="AF:GN">Guinea &nbsp;</option>
+          <option value="AF:GW">Guinea-Bissau &nbsp;</option>
+          <option value="SA:GY">Guyana &nbsp;</option>
+          <option value="CA:HT">Haiti &nbsp;</option>
+          <option value="EU:VA">Holy See (Vatican City State) &nbsp;</option>
+          <option value="CA:HN">Honduras &nbsp;</option>
+          <option value="ES:HK">Hong Kong &nbsp;</option>
+          <option value="EU:HU">Hungary &nbsp;</option>
+          <option value="EU:IS">Iceland &nbsp;</option>
+          <option value="SS:IN">India &nbsp;</option>
+          <option value="SE:ID">Indonesia &nbsp;</option>
+          <option value="ME:IR">Iran, Islamic Republic of &nbsp;</option>
+          <option value="ME:IQ">Iraq &nbsp;</option>
+          <option value="EU:IE">Ireland &nbsp;</option>
+          <option value="ME:IL">Israel &nbsp;</option>
+          <option value="EU:IT">Italy &nbsp;</option>
+          <option value="CA:JM">Jamaica &nbsp;</option>
+          <option value="ES:JP">Japan &nbsp;</option>
+          <option value="ME:JO">Jordan &nbsp;</option>
+          <option value="NS:KZ">Kazakhstan &nbsp;</option>
+          <option value="AF:KE">Kenya &nbsp;</option>
+          <option value="ES:KP">Korea, Democratic People's Republic of &nbsp;</option>
+          <option value="ES:KR">Korea, Republic of &nbsp;</option>
+          <option value="ME:KW">Kuwait &nbsp;</option>
+          <option value="NS:KG">Kyrgyzstan &nbsp;</option>
+          <option value="SE:LA">Lao People's Democratic Republic &nbsp;</option>
+          <option value="EU:LV">Latvia &nbsp;</option>
+          <option value="ME:LB">Lebanon &nbsp;</option>
+          <option value="AF:LS">Lesotho &nbsp;</option>
+          <option value="AF:LR">Liberia &nbsp;</option>
+          <option value="AF:LY">Libyan Arab Jamahiriya &nbsp;</option>
+          <option value="EU:LT">Lithuania &nbsp;</option>
+          <option value="EU:LU">Luxembourg &nbsp;</option>
+          <option value="EU:MK">Macedonia, The Former Yugoslav Republic of &nbsp;</option>
+          <option value="AF:MG">Madagascar &nbsp;</option>
+          <option value="AF:MW">Malawi &nbsp;</option>
+          <option value="SE:MY">Malaysia &nbsp;</option>
+          <option value="AF:ML">Mali &nbsp;</option>
+          <option value="EU:MT">Malta &nbsp;</option>
+          <option value="CA:MQ">Martinique &nbsp;</option>
+          <option value="AF:MR">Mauritania &nbsp;</option>
+          <option value="AF:MU">Mauritius &nbsp;</option>
+          <option value="NA:MX">Mexico &nbsp;</option>
+          <option value="NS:MD">Moldova, Republic of &nbsp;</option>
+          <option value="EU:MC">Monaco &nbsp;</option>
+          <option value="ES:MN">Mongolia &nbsp;</option>
+          <option value="EU:ME">Montenegro &nbsp;</option>
+          <option value="AF:MA">Morocco &nbsp;</option>
+          <option value="AF:MZ">Mozambique &nbsp;</option>
+          <option value="SE:MM">Myanmar &nbsp;</option>
+          <option value="SS:NP">Nepal &nbsp;</option>
+          <option value="EU:NL">Netherlands &nbsp;</option>
+          <option value="EU:AN">Netherlands Antilles &nbsp;</option>
+          <option value="PA:NC">New Caledonia &nbsp;</option>
+          <option value="PA:NZ">New Zealand &nbsp;</option>
+          <option value="CA:NI">Nicaragua &nbsp;</option>
+          <option value="AF:NE">Niger &nbsp;</option>
+          <option value="AF:NG">Nigeria &nbsp;</option>
+          <option value="PA:MP">Northern Mariana Islands &nbsp;</option>
+          <option value="EU:NO">Norway &nbsp;</option>
+          <option value="ME:OM">Oman &nbsp;</option>
+          <option value="SS:PK">Pakistan &nbsp;</option>
+          <option value="CA:PA">Panama &nbsp;</option>
+          <option value="PA:PG">Papua New Guinea &nbsp;</option>
+          <option value="SA:PY">Paraguay &nbsp;</option>
+          <option value="SA:PE">Peru &nbsp;</option>
+          <option value="SE:PH">Philippines &nbsp;</option>
+          <option value="EU:PL">Poland &nbsp;</option>
+          <option value="EU:PT">Portugal &nbsp;</option>
+          <option value="CA:PR">Puerto Rico &nbsp;</option>
+          <option value="ME:QA">Qatar &nbsp;</option>
+          <option value="EU:RO">Romania &nbsp;</option>
+          <option value="NS:RU">Russian Federation &nbsp;</option>
+          <option value="AF:RW">Rwanda &nbsp;</option>
+          <option value="AF:RE">R&#233;union &nbsp;</option>
+          <option value="CA:KN">Saint Kitts and Nevis &nbsp;</option>
+          <option value="ME:SA">Saudi Arabia &nbsp;</option>
+          <option value="AF:SN">Senegal &nbsp;</option>
+          <option value="EU:RS">Serbia &nbsp;</option>
+          <option value="AF:SL">Sierra Leone &nbsp;</option>
+          <option value="SE:SG">Singapore &nbsp;</option>
+          <option value="EU:SK">Slovakia &nbsp;</option>
+          <option value="EU:SI">Slovenia &nbsp;</option>
+          <option value="PA:SB">Solomon Islands &nbsp;</option>
+          <option value="AF:ZA">South Africa &nbsp;</option>
+          <option value="EU:ES">Spain &nbsp;</option>
+          <option value="SS:LK">Sri Lanka &nbsp;</option>
+          <option value="AF:SD">Sudan &nbsp;</option>
+          <option value="AF:SZ">Swaziland &nbsp;</option>
+          <option value="EU:SE">Sweden &nbsp;</option>
+          <option value="EU:CH">Switzerland &nbsp;</option>
+          <option value="ME:SY">Syrian Arab Republic &nbsp;</option>
+          <option value="ES:TW">Taiwan &nbsp;</option>
+          <option value="AF:TZ">Tanzania &nbsp;</option>
+          <option value="SE:TH">Thailand &nbsp;</option>
+          <option value="AF:TG">Togo &nbsp;</option>
+          <option value="CA:TT">Trinidad and Tobago &nbsp;</option>
+          <option value="AF:TN">Tunisia &nbsp;</option>
+          <option value="ME:TR">Turkey &nbsp;</option>
+          <option value="AF:UG">Uganda &nbsp;</option>
+          <option value="NS:UA">Ukraine &nbsp;</option>
+          <option value="ME:AE">United Arab Emirates &nbsp;</option>
+          <option value="EU:GB">United Kingdom &nbsp;</option>
+          <option value="NA:US">United States &nbsp;</option>
+          <option value="SA:UY">Uruguay &nbsp;</option>
+          <option value="NS:UZ">Uzbekistan &nbsp;</option>
+          <option value="PA:VU">Vanuatu &nbsp;</option>
+          <option value="SA:VE">Venezuela &nbsp;</option>
+          <option value="SE:VN">Vietnam &nbsp;</option>
+          <option value="CA:VI">Virgin Islands (U.S.) &nbsp;</option>
+          <option value="ME:YE">Yemen &nbsp;</option>
+          <option value="AF:ZM">Zambia &nbsp;</option>
+          <option value="AF:ZW">Zimbabwe &nbsp;</option>
+        </select>
+      </td>
+    </tr>
+
+    <!-- State 2 -->
+    <tr>
+      <td class="adv_form_fields location_info">
+	<a href="etacts/definitions#Country" class="adv_form_link" title="Help for State search field" target="_blank">State 2</a>:
+      </td>
+      <td class="location_info">
+        <select class="input_field" name="state2" id="State2">
+          <option value=""  selected="selected">--- Optional --- &nbsp;</option>
+          <option value="NA:US:AL">United States, Alabama &nbsp;</option>
+          <option value="NA:US:AK">United States, Alaska &nbsp;</option>
+          <option value="NA:US:AZ">United States, Arizona &nbsp;</option>
+          <option value="NA:US:AR">United States, Arkansas &nbsp;</option>
+          <option value="NA:US:CA">United States, California &nbsp;</option>
+          <option value="NA:US:CO">United States, Colorado &nbsp;</option>
+          <option value="NA:US:CT">United States, Connecticut &nbsp;</option>
+          <option value="NA:US:DE">United States, Delaware &nbsp;</option>
+          <option value="NA:US:DC">United States, District of Columbia &nbsp;</option>
+          <option value="NA:US:FL">United States, Florida &nbsp;</option>
+          <option value="NA:US:GA">United States, Georgia &nbsp;</option>
+          <option value="NA:US:HI">United States, Hawaii &nbsp;</option>
+          <option value="NA:US:ID">United States, Idaho &nbsp;</option>
+          <option value="NA:US:IL">United States, Illinois &nbsp;</option>
+          <option value="NA:US:IN">United States, Indiana &nbsp;</option>
+          <option value="NA:US:IA">United States, Iowa &nbsp;</option>
+          <option value="NA:US:KS">United States, Kansas &nbsp;</option>
+          <option value="NA:US:KY">United States, Kentucky &nbsp;</option>
+          <option value="NA:US:LA">United States, Louisiana &nbsp;</option>
+          <option value="NA:US:ME">United States, Maine &nbsp;</option>
+          <option value="NA:US:MD">United States, Maryland &nbsp;</option>
+          <option value="NA:US:MA">United States, Massachusetts &nbsp;</option>
+          <option value="NA:US:MI">United States, Michigan &nbsp;</option>
+          <option value="NA:US:MN">United States, Minnesota &nbsp;</option>
+          <option value="NA:US:MS">United States, Mississippi &nbsp;</option>
+          <option value="NA:US:MO">United States, Missouri &nbsp;</option>
+          <option value="NA:US:MT">United States, Montana &nbsp;</option>
+          <option value="NA:US:NE">United States, Nebraska &nbsp;</option>
+          <option value="NA:US:NV">United States, Nevada &nbsp;</option>
+          <option value="NA:US:NH">United States, New Hampshire &nbsp;</option>
+          <option value="NA:US:NJ">United States, New Jersey &nbsp;</option>
+          <option value="NA:US:NM">United States, New Mexico &nbsp;</option>
+          <option value="NA:US:NY">United States, New York &nbsp;</option>
+          <option value="NA:US:NC">United States, North Carolina &nbsp;</option>
+          <option value="NA:US:ND">United States, North Dakota &nbsp;</option>
+          <option value="NA:US:OH">United States, Ohio &nbsp;</option>
+          <option value="NA:US:OK">United States, Oklahoma &nbsp;</option>
+          <option value="NA:US:OR">United States, Oregon &nbsp;</option>
+          <option value="NA:US:PA">United States, Pennsylvania &nbsp;</option>
+          <option value="NA:US:RI">United States, Rhode Island &nbsp;</option>
+          <option value="NA:US:SC">United States, South Carolina &nbsp;</option>
+          <option value="NA:US:SD">United States, South Dakota &nbsp;</option>
+          <option value="NA:US:TN">United States, Tennessee &nbsp;</option>
+          <option value="NA:US:TX">United States, Texas &nbsp;</option>
+          <option value="NA:US:UT">United States, Utah &nbsp;</option>
+          <option value="NA:US:VT">United States, Vermont &nbsp;</option>
+          <option value="NA:US:VA">United States, Virginia &nbsp;</option>
+          <option value="NA:US:WA">United States, Washington &nbsp;</option>
+          <option value="NA:US:WV">United States, West Virginia &nbsp;</option>
+          <option value="NA:US:WI">United States, Wisconsin &nbsp;</option>
+          <option value="NA:US:WY">United States, Wyoming &nbsp;</option>
+          <option value="NA:CA:AB">Canada, Alberta &nbsp;</option>
+          <option value="NA:CA:BC">Canada, British Columbia &nbsp;</option>
+          <option value="NA:CA:MB">Canada, Manitoba &nbsp;</option>
+          <option value="NA:CA:NB">Canada, New Brunswick &nbsp;</option>
+          <option value="NA:CA:NF">Canada, Newfoundland and Labrador &nbsp;</option>
+          <option value="NA:CA:NS">Canada, Nova Scotia &nbsp;</option>
+          <option value="NA:CA:ON">Canada, Ontario &nbsp;</option>
+          <option value="NA:CA:PE">Canada, Prince Edward Island &nbsp;</option>
+          <option value="NA:CA:QC">Canada, Quebec &nbsp;</option>
+          <option value="NA:CA:SK">Canada, Saskatchewan &nbsp;</option>
+          <option value="PA:AU:AC">Australia, Australian Capital Territory &nbsp;</option>
+          <option value="PA:AU:SW">Australia, New South Wales &nbsp;</option>
+          <option value="PA:AU:NT">Australia, Northern Territory &nbsp;</option>
+          <option value="PA:AU:QL">Australia, Queensland &nbsp;</option>
+          <option value="PA:AU:SA">Australia, South Australia &nbsp;</option>
+          <option value="PA:AU:TA">Australia, Tasmania &nbsp;</option>
+          <option value="PA:AU:VC">Australia, Victoria &nbsp;</option>
+          <option value="PA:AU:WA">Australia, Western Australia &nbsp;</option>
+        </select>
+      </td>
+    </tr>
+    <!-- Country 2 -->
+    <tr>
+      <td class="adv_form_fields">
+	<a href="etacts/definitions#Country" class="adv_form_link" title="Help for Country search field" target="_blank">Country 2</a>:
+      </td>
+      <td>
+        <select class="input_field" name="cntry2" id="Country2">
+          <option value=""  selected="selected">--- Optional --- &nbsp;</option>
+          <option value="NA:US">United States &nbsp;</option>
+          <option value="SS:AF">Afghanistan &nbsp;</option>
+          <option value="EU:AL">Albania &nbsp;</option>
+          <option value="AF:DZ">Algeria &nbsp;</option>
+          <option value="PA:AS">American Samoa &nbsp;</option>
+          <option value="EU:AD">Andorra &nbsp;</option>
+          <option value="AF:AO">Angola &nbsp;</option>
+          <option value="SA:AR">Argentina &nbsp;</option>
+          <option value="NS:AM">Armenia &nbsp;</option>
+          <option value="PA:AU">Australia &nbsp;</option>
+          <option value="EU:AT">Austria &nbsp;</option>
+          <option value="NS:AZ">Azerbaijan &nbsp;</option>
+          <option value="CA:BS">Bahamas &nbsp;</option>
+          <option value="ME:BH">Bahrain &nbsp;</option>
+          <option value="SS:BD">Bangladesh &nbsp;</option>
+          <option value="CA:BB">Barbados &nbsp;</option>
+          <option value="NS:BY">Belarus &nbsp;</option>
+          <option value="EU:BE">Belgium &nbsp;</option>
+          <option value="CA:BZ">Belize &nbsp;</option>
+          <option value="AF:BJ">Benin &nbsp;</option>
+          <option value="CA:BM">Bermuda &nbsp;</option>
+          <option value="SS:BT">Bhutan &nbsp;</option>
+          <option value="SA:BO">Bolivia &nbsp;</option>
+          <option value="EU:BA">Bosnia and Herzegovina &nbsp;</option>
+          <option value="AF:BW">Botswana &nbsp;</option>
+          <option value="SA:BR">Brazil &nbsp;</option>
+          <option value="SE:BN">Brunei Darussalam &nbsp;</option>
+          <option value="EU:BG">Bulgaria &nbsp;</option>
+          <option value="AF:BF">Burkina Faso &nbsp;</option>
+          <option value="AF:BI">Burundi &nbsp;</option>
+          <option value="SE:KH">Cambodia &nbsp;</option>
+          <option value="AF:CM">Cameroon &nbsp;</option>
+          <option value="NA:CA">Canada &nbsp;</option>
+          <option value="AF:CF">Central African Republic &nbsp;</option>
+          <option value="AF:TD">Chad &nbsp;</option>
+          <option value="SA:CL">Chile &nbsp;</option>
+          <option value="ES:CN">China &nbsp;</option>
+          <option value="SA:CO">Colombia &nbsp;</option>
+          <option value="AF:CG">Congo &nbsp;</option>
+          <option value="AF:CD">Congo, The Democratic Republic of the &nbsp;</option>
+          <option value="CA:CR">Costa Rica &nbsp;</option>
+          <option value="EU:HR">Croatia &nbsp;</option>
+          <option value="CA:CU">Cuba &nbsp;</option>
+          <option value="ME:CY">Cyprus &nbsp;</option>
+          <option value="EU:CZ">Czech Republic &nbsp;</option>
+          <option value="AF:CI">C&#244;te D'Ivoire &nbsp;</option>
+          <option value="EU:DK">Denmark &nbsp;</option>
+          <option value="AF:DJ">Djibouti &nbsp;</option>
+          <option value="CA:DO">Dominican Republic &nbsp;</option>
+          <option value="SA:EC">Ecuador &nbsp;</option>
+          <option value="AF:EG">Egypt &nbsp;</option>
+          <option value="CA:SV">El Salvador &nbsp;</option>
+          <option value="AF:GQ">Equatorial Guinea &nbsp;</option>
+          <option value="EU:EE">Estonia &nbsp;</option>
+          <option value="AF:ET">Ethiopia &nbsp;</option>
+          <option value="PA:FJ">Fiji &nbsp;</option>
+          <option value="EU:FI">Finland &nbsp;</option>
+          <option value="EU:CS">Former Serbia and Montenegro &nbsp;</option>
+          <option value="EU:YU">Former Yugoslavia &nbsp;</option>
+          <option value="EU:FR">France &nbsp;</option>
+          <option value="PA:PF">French Polynesia &nbsp;</option>
+          <option value="AF:GA">Gabon &nbsp;</option>
+          <option value="AF:GM">Gambia &nbsp;</option>
+          <option value="NS:GE">Georgia &nbsp;</option>
+          <option value="EU:DE">Germany &nbsp;</option>
+          <option value="AF:GH">Ghana &nbsp;</option>
+          <option value="EU:GR">Greece &nbsp;</option>
+          <option value="CA:GD">Grenada &nbsp;</option>
+          <option value="CA:GP">Guadeloupe &nbsp;</option>
+          <option value="CA:GT">Guatemala &nbsp;</option>
+          <option value="AF:GN">Guinea &nbsp;</option>
+          <option value="AF:GW">Guinea-Bissau &nbsp;</option>
+          <option value="SA:GY">Guyana &nbsp;</option>
+          <option value="CA:HT">Haiti &nbsp;</option>
+          <option value="EU:VA">Holy See (Vatican City State) &nbsp;</option>
+          <option value="CA:HN">Honduras &nbsp;</option>
+          <option value="ES:HK">Hong Kong &nbsp;</option>
+          <option value="EU:HU">Hungary &nbsp;</option>
+          <option value="EU:IS">Iceland &nbsp;</option>
+          <option value="SS:IN">India &nbsp;</option>
+          <option value="SE:ID">Indonesia &nbsp;</option>
+          <option value="ME:IR">Iran, Islamic Republic of &nbsp;</option>
+          <option value="ME:IQ">Iraq &nbsp;</option>
+          <option value="EU:IE">Ireland &nbsp;</option>
+          <option value="ME:IL">Israel &nbsp;</option>
+          <option value="EU:IT">Italy &nbsp;</option>
+          <option value="CA:JM">Jamaica &nbsp;</option>
+          <option value="ES:JP">Japan &nbsp;</option>
+          <option value="ME:JO">Jordan &nbsp;</option>
+          <option value="NS:KZ">Kazakhstan &nbsp;</option>
+          <option value="AF:KE">Kenya &nbsp;</option>
+          <option value="ES:KP">Korea, Democratic People's Republic of &nbsp;</option>
+          <option value="ES:KR">Korea, Republic of &nbsp;</option>
+          <option value="ME:KW">Kuwait &nbsp;</option>
+          <option value="NS:KG">Kyrgyzstan &nbsp;</option>
+          <option value="SE:LA">Lao People's Democratic Republic &nbsp;</option>
+          <option value="EU:LV">Latvia &nbsp;</option>
+          <option value="ME:LB">Lebanon &nbsp;</option>
+          <option value="AF:LS">Lesotho &nbsp;</option>
+          <option value="AF:LR">Liberia &nbsp;</option>
+          <option value="AF:LY">Libyan Arab Jamahiriya &nbsp;</option>
+          <option value="EU:LT">Lithuania &nbsp;</option>
+          <option value="EU:LU">Luxembourg &nbsp;</option>
+          <option value="EU:MK">Macedonia, The Former Yugoslav Republic of &nbsp;</option>
+          <option value="AF:MG">Madagascar &nbsp;</option>
+          <option value="AF:MW">Malawi &nbsp;</option>
+          <option value="SE:MY">Malaysia &nbsp;</option>
+          <option value="AF:ML">Mali &nbsp;</option>
+          <option value="EU:MT">Malta &nbsp;</option>
+          <option value="CA:MQ">Martinique &nbsp;</option>
+          <option value="AF:MR">Mauritania &nbsp;</option>
+          <option value="AF:MU">Mauritius &nbsp;</option>
+          <option value="NA:MX">Mexico &nbsp;</option>
+          <option value="NS:MD">Moldova, Republic of &nbsp;</option>
+          <option value="EU:MC">Monaco &nbsp;</option>
+          <option value="ES:MN">Mongolia &nbsp;</option>
+          <option value="EU:ME">Montenegro &nbsp;</option>
+          <option value="AF:MA">Morocco &nbsp;</option>
+          <option value="AF:MZ">Mozambique &nbsp;</option>
+          <option value="SE:MM">Myanmar &nbsp;</option>
+          <option value="SS:NP">Nepal &nbsp;</option>
+          <option value="EU:NL">Netherlands &nbsp;</option>
+          <option value="EU:AN">Netherlands Antilles &nbsp;</option>
+          <option value="PA:NC">New Caledonia &nbsp;</option>
+          <option value="PA:NZ">New Zealand &nbsp;</option>
+          <option value="CA:NI">Nicaragua &nbsp;</option>
+          <option value="AF:NE">Niger &nbsp;</option>
+          <option value="AF:NG">Nigeria &nbsp;</option>
+          <option value="PA:MP">Northern Mariana Islands &nbsp;</option>
+          <option value="EU:NO">Norway &nbsp;</option>
+          <option value="ME:OM">Oman &nbsp;</option>
+          <option value="SS:PK">Pakistan &nbsp;</option>
+          <option value="CA:PA">Panama &nbsp;</option>
+          <option value="PA:PG">Papua New Guinea &nbsp;</option>
+          <option value="SA:PY">Paraguay &nbsp;</option>
+          <option value="SA:PE">Peru &nbsp;</option>
+          <option value="SE:PH">Philippines &nbsp;</option>
+          <option value="EU:PL">Poland &nbsp;</option>
+          <option value="EU:PT">Portugal &nbsp;</option>
+          <option value="CA:PR">Puerto Rico &nbsp;</option>
+          <option value="ME:QA">Qatar &nbsp;</option>
+          <option value="EU:RO">Romania &nbsp;</option>
+          <option value="NS:RU">Russian Federation &nbsp;</option>
+          <option value="AF:RW">Rwanda &nbsp;</option>
+          <option value="AF:RE">R&#233;union &nbsp;</option>
+          <option value="CA:KN">Saint Kitts and Nevis &nbsp;</option>
+          <option value="ME:SA">Saudi Arabia &nbsp;</option>
+          <option value="AF:SN">Senegal &nbsp;</option>
+          <option value="EU:RS">Serbia &nbsp;</option>
+          <option value="AF:SL">Sierra Leone &nbsp;</option>
+          <option value="SE:SG">Singapore &nbsp;</option>
+          <option value="EU:SK">Slovakia &nbsp;</option>
+          <option value="EU:SI">Slovenia &nbsp;</option>
+          <option value="PA:SB">Solomon Islands &nbsp;</option>
+          <option value="AF:ZA">South Africa &nbsp;</option>
+          <option value="EU:ES">Spain &nbsp;</option>
+          <option value="SS:LK">Sri Lanka &nbsp;</option>
+          <option value="AF:SD">Sudan &nbsp;</option>
+          <option value="AF:SZ">Swaziland &nbsp;</option>
+          <option value="EU:SE">Sweden &nbsp;</option>
+          <option value="EU:CH">Switzerland &nbsp;</option>
+          <option value="ME:SY">Syrian Arab Republic &nbsp;</option>
+          <option value="ES:TW">Taiwan &nbsp;</option>
+          <option value="AF:TZ">Tanzania &nbsp;</option>
+          <option value="SE:TH">Thailand &nbsp;</option>
+          <option value="AF:TG">Togo &nbsp;</option>
+          <option value="CA:TT">Trinidad and Tobago &nbsp;</option>
+          <option value="AF:TN">Tunisia &nbsp;</option>
+          <option value="ME:TR">Turkey &nbsp;</option>
+          <option value="AF:UG">Uganda &nbsp;</option>
+          <option value="NS:UA">Ukraine &nbsp;</option>
+          <option value="ME:AE">United Arab Emirates &nbsp;</option>
+          <option value="EU:GB">United Kingdom &nbsp;</option>
+          <option value="NA:US">United States &nbsp;</option>
+          <option value="SA:UY">Uruguay &nbsp;</option>
+          <option value="NS:UZ">Uzbekistan &nbsp;</option>
+          <option value="PA:VU">Vanuatu &nbsp;</option>
+          <option value="SA:VE">Venezuela &nbsp;</option>
+          <option value="SE:VN">Vietnam &nbsp;</option>
+          <option value="CA:VI">Virgin Islands (U.S.) &nbsp;</option>
+          <option value="ME:YE">Yemen &nbsp;</option>
+          <option value="AF:ZM">Zambia &nbsp;</option>
+          <option value="AF:ZW">Zimbabwe &nbsp;</option>         
+        </select>
+      </td>
+    </tr>
+
+    <!-- State 3 -->
+    <tr>
+      <td class="adv_form_fields location_info">
+	<a href="etacts/definitions#Country" class="adv_form_link" title="Help for State search field" target="_blank">State 3</a>:
+      </td>
+      <td class="location_info">
+        <select class="input_field" name="state3" id="State3">
+          <option value="" selected="selected">--- Optional --- &nbsp;</option>
+          <option value="NA:US:AL">United States, Alabama &nbsp;</option>
+          <option value="NA:US:AK">United States, Alaska &nbsp;</option>
+          <option value="NA:US:AZ">United States, Arizona &nbsp;</option>
+          <option value="NA:US:AR">United States, Arkansas &nbsp;</option>
+          <option value="NA:US:CA">United States, California &nbsp;</option>
+          <option value="NA:US:CO">United States, Colorado &nbsp;</option>
+          <option value="NA:US:CT">United States, Connecticut &nbsp;</option>
+          <option value="NA:US:DE">United States, Delaware &nbsp;</option>
+          <option value="NA:US:DC">United States, District of Columbia &nbsp;</option>
+          <option value="NA:US:FL">United States, Florida &nbsp;</option>
+          <option value="NA:US:GA">United States, Georgia &nbsp;</option>
+          <option value="NA:US:HI">United States, Hawaii &nbsp;</option>
+          <option value="NA:US:ID">United States, Idaho &nbsp;</option>
+          <option value="NA:US:IL">United States, Illinois &nbsp;</option>
+          <option value="NA:US:IN">United States, Indiana &nbsp;</option>
+          <option value="NA:US:IA">United States, Iowa &nbsp;</option>
+          <option value="NA:US:KS">United States, Kansas &nbsp;</option>
+          <option value="NA:US:KY">United States, Kentucky &nbsp;</option>
+          <option value="NA:US:LA">United States, Louisiana &nbsp;</option>
+          <option value="NA:US:ME">United States, Maine &nbsp;</option>
+          <option value="NA:US:MD">United States, Maryland &nbsp;</option>
+          <option value="NA:US:MA">United States, Massachusetts &nbsp;</option>
+          <option value="NA:US:MI">United States, Michigan &nbsp;</option>
+          <option value="NA:US:MN">United States, Minnesota &nbsp;</option>
+          <option value="NA:US:MS">United States, Mississippi &nbsp;</option>
+          <option value="NA:US:MO">United States, Missouri &nbsp;</option>
+          <option value="NA:US:MT">United States, Montana &nbsp;</option>
+          <option value="NA:US:NE">United States, Nebraska &nbsp;</option>
+          <option value="NA:US:NV">United States, Nevada &nbsp;</option>
+          <option value="NA:US:NH">United States, New Hampshire &nbsp;</option>
+          <option value="NA:US:NJ">United States, New Jersey &nbsp;</option>
+          <option value="NA:US:NM">United States, New Mexico &nbsp;</option>
+          <option value="NA:US:NY">United States, New York &nbsp;</option>
+          <option value="NA:US:NC">United States, North Carolina &nbsp;</option>
+          <option value="NA:US:ND">United States, North Dakota &nbsp;</option>
+          <option value="NA:US:OH">United States, Ohio &nbsp;</option>
+          <option value="NA:US:OK">United States, Oklahoma &nbsp;</option>
+          <option value="NA:US:OR">United States, Oregon &nbsp;</option>
+          <option value="NA:US:PA">United States, Pennsylvania &nbsp;</option>
+          <option value="NA:US:RI">United States, Rhode Island &nbsp;</option>
+          <option value="NA:US:SC">United States, South Carolina &nbsp;</option>
+          <option value="NA:US:SD">United States, South Dakota &nbsp;</option>
+          <option value="NA:US:TN">United States, Tennessee &nbsp;</option>
+          <option value="NA:US:TX">United States, Texas &nbsp;</option>
+          <option value="NA:US:UT">United States, Utah &nbsp;</option>
+          <option value="NA:US:VT">United States, Vermont &nbsp;</option>
+          <option value="NA:US:VA">United States, Virginia &nbsp;</option>
+          <option value="NA:US:WA">United States, Washington &nbsp;</option>
+          <option value="NA:US:WV">United States, West Virginia &nbsp;</option>
+          <option value="NA:US:WI">United States, Wisconsin &nbsp;</option>
+          <option value="NA:US:WY">United States, Wyoming &nbsp;</option>
+          <option value="NA:CA:AB">Canada, Alberta &nbsp;</option>
+          <option value="NA:CA:BC">Canada, British Columbia &nbsp;</option>
+          <option value="NA:CA:MB">Canada, Manitoba &nbsp;</option>
+          <option value="NA:CA:NB">Canada, New Brunswick &nbsp;</option>
+          <option value="NA:CA:NF">Canada, Newfoundland and Labrador &nbsp;</option>
+          <option value="NA:CA:NS">Canada, Nova Scotia &nbsp;</option>
+          <option value="NA:CA:ON">Canada, Ontario &nbsp;</option>
+          <option value="NA:CA:PE">Canada, Prince Edward Island &nbsp;</option>
+          <option value="NA:CA:QC">Canada, Quebec &nbsp;</option>
+          <option value="NA:CA:SK">Canada, Saskatchewan &nbsp;</option>
+          <option value="PA:AU:AC">Australia, Australian Capital Territory &nbsp;</option>
+          <option value="PA:AU:SW">Australia, New South Wales &nbsp;</option>
+          <option value="PA:AU:NT">Australia, Northern Territory &nbsp;</option>
+          <option value="PA:AU:QL">Australia, Queensland &nbsp;</option>
+          <option value="PA:AU:SA">Australia, South Australia &nbsp;</option>
+          <option value="PA:AU:TA">Australia, Tasmania &nbsp;</option>
+          <option value="PA:AU:VC">Australia, Victoria &nbsp;</option>
+          <option value="PA:AU:WA">Australia, Western Australia &nbsp;</option>              
+        </select>
+      </td>
+    </tr>
+    <!-- Country 3 -->
+    <tr>
+      <td class="adv_form_fields">
+	<a href="etacts/definitions#Country" class="adv_form_link" title="Help for Country search field" target="_blank">Country 3</a>:
+      </td>
+      <td>
+        <select class="input_field" name="cntry3" id="Country3">
+          <option value=""  selected="selected">--- Optional --- &nbsp;</option>
+          <option value="NA:US">United States &nbsp;</option>
+          <option value="SS:AF">Afghanistan &nbsp;</option>
+          <option value="EU:AL">Albania &nbsp;</option>
+          <option value="AF:DZ">Algeria &nbsp;</option>
+          <option value="PA:AS">American Samoa &nbsp;</option>
+          <option value="EU:AD">Andorra &nbsp;</option>
+          <option value="AF:AO">Angola &nbsp;</option>
+          <option value="SA:AR">Argentina &nbsp;</option>
+          <option value="NS:AM">Armenia &nbsp;</option>
+          <option value="PA:AU">Australia &nbsp;</option>
+          <option value="EU:AT">Austria &nbsp;</option>
+          <option value="NS:AZ">Azerbaijan &nbsp;</option>
+          <option value="CA:BS">Bahamas &nbsp;</option>
+          <option value="ME:BH">Bahrain &nbsp;</option>
+          <option value="SS:BD">Bangladesh &nbsp;</option>
+          <option value="CA:BB">Barbados &nbsp;</option>
+          <option value="NS:BY">Belarus &nbsp;</option>
+          <option value="EU:BE">Belgium &nbsp;</option>
+          <option value="CA:BZ">Belize &nbsp;</option>
+          <option value="AF:BJ">Benin &nbsp;</option>
+          <option value="CA:BM">Bermuda &nbsp;</option>
+          <option value="SS:BT">Bhutan &nbsp;</option>
+          <option value="SA:BO">Bolivia &nbsp;</option>
+          <option value="EU:BA">Bosnia and Herzegovina &nbsp;</option>
+          <option value="AF:BW">Botswana &nbsp;</option>
+          <option value="SA:BR">Brazil &nbsp;</option>
+          <option value="SE:BN">Brunei Darussalam &nbsp;</option>
+          <option value="EU:BG">Bulgaria &nbsp;</option>
+          <option value="AF:BF">Burkina Faso &nbsp;</option>
+          <option value="AF:BI">Burundi &nbsp;</option>
+          <option value="SE:KH">Cambodia &nbsp;</option>
+          <option value="AF:CM">Cameroon &nbsp;</option>
+          <option value="NA:CA">Canada &nbsp;</option>
+          <option value="AF:CF">Central African Republic &nbsp;</option>
+          <option value="AF:TD">Chad &nbsp;</option>
+          <option value="SA:CL">Chile &nbsp;</option>
+          <option value="ES:CN">China &nbsp;</option>
+          <option value="SA:CO">Colombia &nbsp;</option>
+          <option value="AF:CG">Congo &nbsp;</option>
+          <option value="AF:CD">Congo, The Democratic Republic of the &nbsp;</option>
+          <option value="CA:CR">Costa Rica &nbsp;</option>
+          <option value="EU:HR">Croatia &nbsp;</option>
+          <option value="CA:CU">Cuba &nbsp;</option>
+          <option value="ME:CY">Cyprus &nbsp;</option>
+          <option value="EU:CZ">Czech Republic &nbsp;</option>
+          <option value="AF:CI">C&#244;te D'Ivoire &nbsp;</option>
+          <option value="EU:DK">Denmark &nbsp;</option>
+          <option value="AF:DJ">Djibouti &nbsp;</option>
+          <option value="CA:DO">Dominican Republic &nbsp;</option>
+          <option value="SA:EC">Ecuador &nbsp;</option>
+          <option value="AF:EG">Egypt &nbsp;</option>
+          <option value="CA:SV">El Salvador &nbsp;</option>
+          <option value="AF:GQ">Equatorial Guinea &nbsp;</option>
+          <option value="EU:EE">Estonia &nbsp;</option>
+          <option value="AF:ET">Ethiopia &nbsp;</option>
+          <option value="PA:FJ">Fiji &nbsp;</option>
+          <option value="EU:FI">Finland &nbsp;</option>
+          <option value="EU:CS">Former Serbia and Montenegro &nbsp;</option>
+          <option value="EU:YU">Former Yugoslavia &nbsp;</option>
+          <option value="EU:FR">France &nbsp;</option>
+          <option value="PA:PF">French Polynesia &nbsp;</option>
+          <option value="AF:GA">Gabon &nbsp;</option>
+          <option value="AF:GM">Gambia &nbsp;</option>
+          <option value="NS:GE">Georgia &nbsp;</option>
+          <option value="EU:DE">Germany &nbsp;</option>
+          <option value="AF:GH">Ghana &nbsp;</option>
+          <option value="EU:GR">Greece &nbsp;</option>
+          <option value="CA:GD">Grenada &nbsp;</option>
+          <option value="CA:GP">Guadeloupe &nbsp;</option>
+          <option value="CA:GT">Guatemala &nbsp;</option>
+          <option value="AF:GN">Guinea &nbsp;</option>
+          <option value="AF:GW">Guinea-Bissau &nbsp;</option>
+          <option value="SA:GY">Guyana &nbsp;</option>
+          <option value="CA:HT">Haiti &nbsp;</option>
+          <option value="EU:VA">Holy See (Vatican City State) &nbsp;</option>
+          <option value="CA:HN">Honduras &nbsp;</option>
+          <option value="ES:HK">Hong Kong &nbsp;</option>
+          <option value="EU:HU">Hungary &nbsp;</option>
+          <option value="EU:IS">Iceland &nbsp;</option>
+          <option value="SS:IN">India &nbsp;</option>
+          <option value="SE:ID">Indonesia &nbsp;</option>
+          <option value="ME:IR">Iran, Islamic Republic of &nbsp;</option>
+          <option value="ME:IQ">Iraq &nbsp;</option>
+          <option value="EU:IE">Ireland &nbsp;</option>
+          <option value="ME:IL">Israel &nbsp;</option>
+          <option value="EU:IT">Italy &nbsp;</option>
+          <option value="CA:JM">Jamaica &nbsp;</option>
+          <option value="ES:JP">Japan &nbsp;</option>
+          <option value="ME:JO">Jordan &nbsp;</option>
+          <option value="NS:KZ">Kazakhstan &nbsp;</option>
+          <option value="AF:KE">Kenya &nbsp;</option>
+          <option value="ES:KP">Korea, Democratic People's Republic of &nbsp;</option>
+          <option value="ES:KR">Korea, Republic of &nbsp;</option>
+          <option value="ME:KW">Kuwait &nbsp;</option>
+          <option value="NS:KG">Kyrgyzstan &nbsp;</option>
+          <option value="SE:LA">Lao People's Democratic Republic &nbsp;</option>
+          <option value="EU:LV">Latvia &nbsp;</option>
+          <option value="ME:LB">Lebanon &nbsp;</option>
+          <option value="AF:LS">Lesotho &nbsp;</option>
+          <option value="AF:LR">Liberia &nbsp;</option>
+          <option value="AF:LY">Libyan Arab Jamahiriya &nbsp;</option>
+          <option value="EU:LT">Lithuania &nbsp;</option>
+          <option value="EU:LU">Luxembourg &nbsp;</option>
+          <option value="EU:MK">Macedonia, The Former Yugoslav Republic of &nbsp;</option>
+          <option value="AF:MG">Madagascar &nbsp;</option>
+          <option value="AF:MW">Malawi &nbsp;</option>
+          <option value="SE:MY">Malaysia &nbsp;</option>
+          <option value="AF:ML">Mali &nbsp;</option>
+          <option value="EU:MT">Malta &nbsp;</option>
+          <option value="CA:MQ">Martinique &nbsp;</option>
+          <option value="AF:MR">Mauritania &nbsp;</option>
+          <option value="AF:MU">Mauritius &nbsp;</option>
+          <option value="NA:MX">Mexico &nbsp;</option>
+          <option value="NS:MD">Moldova, Republic of &nbsp;</option>
+          <option value="EU:MC">Monaco &nbsp;</option>
+          <option value="ES:MN">Mongolia &nbsp;</option>
+          <option value="EU:ME">Montenegro &nbsp;</option>
+          <option value="AF:MA">Morocco &nbsp;</option>
+          <option value="AF:MZ">Mozambique &nbsp;</option>
+          <option value="SE:MM">Myanmar &nbsp;</option>
+          <option value="SS:NP">Nepal &nbsp;</option>
+          <option value="EU:NL">Netherlands &nbsp;</option>
+          <option value="EU:AN">Netherlands Antilles &nbsp;</option>
+          <option value="PA:NC">New Caledonia &nbsp;</option>
+          <option value="PA:NZ">New Zealand &nbsp;</option>
+          <option value="CA:NI">Nicaragua &nbsp;</option>
+          <option value="AF:NE">Niger &nbsp;</option>
+          <option value="AF:NG">Nigeria &nbsp;</option>
+          <option value="PA:MP">Northern Mariana Islands &nbsp;</option>
+          <option value="EU:NO">Norway &nbsp;</option>
+          <option value="ME:OM">Oman &nbsp;</option>
+          <option value="SS:PK">Pakistan &nbsp;</option>
+          <option value="CA:PA">Panama &nbsp;</option>
+          <option value="PA:PG">Papua New Guinea &nbsp;</option>
+          <option value="SA:PY">Paraguay &nbsp;</option>
+          <option value="SA:PE">Peru &nbsp;</option>
+          <option value="SE:PH">Philippines &nbsp;</option>
+          <option value="EU:PL">Poland &nbsp;</option>
+          <option value="EU:PT">Portugal &nbsp;</option>
+          <option value="CA:PR">Puerto Rico &nbsp;</option>
+          <option value="ME:QA">Qatar &nbsp;</option>
+          <option value="EU:RO">Romania &nbsp;</option>
+          <option value="NS:RU">Russian Federation &nbsp;</option>
+          <option value="AF:RW">Rwanda &nbsp;</option>
+          <option value="AF:RE">R&#233;union &nbsp;</option>
+          <option value="CA:KN">Saint Kitts and Nevis &nbsp;</option>
+          <option value="ME:SA">Saudi Arabia &nbsp;</option>
+          <option value="AF:SN">Senegal &nbsp;</option>
+          <option value="EU:RS">Serbia &nbsp;</option>
+          <option value="AF:SL">Sierra Leone &nbsp;</option>
+          <option value="SE:SG">Singapore &nbsp;</option>
+          <option value="EU:SK">Slovakia &nbsp;</option>
+          <option value="EU:SI">Slovenia &nbsp;</option>
+          <option value="PA:SB">Solomon Islands &nbsp;</option>
+          <option value="AF:ZA">South Africa &nbsp;</option>
+          <option value="EU:ES">Spain &nbsp;</option>
+          <option value="SS:LK">Sri Lanka &nbsp;</option>
+          <option value="AF:SD">Sudan &nbsp;</option>
+          <option value="AF:SZ">Swaziland &nbsp;</option>
+          <option value="EU:SE">Sweden &nbsp;</option>
+          <option value="EU:CH">Switzerland &nbsp;</option>
+          <option value="ME:SY">Syrian Arab Republic &nbsp;</option>
+          <option value="ES:TW">Taiwan &nbsp;</option>
+          <option value="AF:TZ">Tanzania &nbsp;</option>
+          <option value="SE:TH">Thailand &nbsp;</option>
+          <option value="AF:TG">Togo &nbsp;</option>
+          <option value="CA:TT">Trinidad and Tobago &nbsp;</option>
+          <option value="AF:TN">Tunisia &nbsp;</option>
+          <option value="ME:TR">Turkey &nbsp;</option>
+          <option value="AF:UG">Uganda &nbsp;</option>
+          <option value="NS:UA">Ukraine &nbsp;</option>
+          <option value="ME:AE">United Arab Emirates &nbsp;</option>
+          <option value="EU:GB">United Kingdom &nbsp;</option>
+          <option value="NA:US">United States &nbsp;</option>
+          <option value="SA:UY">Uruguay &nbsp;</option>
+          <option value="NS:UZ">Uzbekistan &nbsp;</option>
+          <option value="PA:VU">Vanuatu &nbsp;</option>
+          <option value="SA:VE">Venezuela &nbsp;</option>
+          <option value="SE:VN">Vietnam &nbsp;</option>
+          <option value="CA:VI">Virgin Islands (U.S.) &nbsp;</option>
+          <option value="ME:YE">Yemen &nbsp;</option>
+          <option value="AF:ZM">Zambia &nbsp;</option>
+          <option value="AF:ZW">Zimbabwe &nbsp;</option> 
+        </select>
+      </td>
+    </tr>
+
+    <!-- Location Terms -->
+    <tr><tr><tr></tr>
+    <tr>
+      <td class="adv_form_fields location_info">
+        <a href="etacts/definitions#Location" class="adv_form_link" title="Help for Location Terms search field" target="_blank">Location Terms</a>:
+      </td>
+      <td class="location_info">
+        <input class="input_field field_text" type="text" name="locn" id="LocationTerms" value=""/>
+      </td>
+    </tr>
+
+<!-- ====== Additional Criteria Fields ====== -->
+
+    <tr><td class="advs_type_title">Additional Criteria:</td></tr>
+
+    <!-- Gender -->
+    <tr>
+      <td class="adv_form_fields">
+	<a href="etacts/definitions#Gender" class="adv_form_link" title="Help for Gender search field" target="_blank">Gender</a>:
+      </td>
+      <td>
+        <select class="input_field" name="gndr" id="Gender">
+          <option value="">All Studies</option>
+	  <option value="Female">Studies with Female Participants</option>
+	  <option value="Male">Studies with Male Participants</option>
+        </select>
+      </td>
+    </tr><tr></tr><tr></tr>
+
+    <!-- Age -->
+    <tr>
+      <td class="adv_form_fields">
+        <a href="etacts/definitions#Age" title="Help for Age Group search field" class="adv_form_link" target="_blank">Age Group</a>:
+      </td>
+      <td>
+	<input class="chkbox" type="checkbox" name="age" id="IncludeChild"  value="0"/><span class="chkbox_text">Child (birth-17) </span>
+	<input class="chkbox" type="checkbox" name="age" id="IncludeAdult"  value="1"/><span class="chkbox_text">Adult (18-65) </span>
+        <input class="chkbox" type="checkbox" name="age" id="IncludeSenior" value="2"/><span class="chkbox_text">Senior (66+) </span>
+      </td>
+    </tr><tr></tr><tr></tr>
+
+    <!-- Phase -->
+    <tr>
+      <td class="adv_form_fields">
+        <a href="etacts/definitions#Phase" title="Help for Phase search field" class="adv_form_link" target="_blank">Phase</a>:
+      </td>
+      <td>
+	<input class="chkbox" type="checkbox" name="phase" id="IncludePhase0" value="4"/><span class="chkbox_text">Phase 0</span>
+	<input class="chkbox" type="checkbox" name="phase" id="IncludePhase1" value="0"/><span class="chkbox_text">Phase 1</span>
+	<input class="chkbox" type="checkbox" name="phase" id="IncludePhase2" value="1"/><span class="chkbox_text">Phase 2</span>
+	<input class="chkbox" type="checkbox" name="phase" id="IncludePhase3" value="2"/><span class="chkbox_text">Phase 3</span>
+	<input class="chkbox" type="checkbox" name="phase" id="IncludePhase4" value="3"/><span class="chkbox_text">Phase 4</span>
+      </td>
+   </tr><tr></tr><tr></tr>
+
+    <!-- Funder Type -->
+    <tr>
+      <td class="adv_form_fields">
+        <a href="etacts/definitions#Funder" title="Help for Funder Type search field" class="adv_form_link" target="_blank">Funder Type</a>:
+      </td>
+      <td>
+	 <input class="chkbox" type="checkbox" name="fund" id="IncludeNIH" value="0"/><span class="chkbox_text">NIH</span>
+         <input class="chkbox" type="checkbox" name="fund" id="IncludeFed" value="1"/><span class="chkbox_text">Other U.S. Federal Agency</span>
+         <input class="chkbox" type="checkbox" name="fund" id="IncludeIndustry" value="2"/><span class="chkbox_text">Industry</span>
+	 <input class="chkbox" type="checkbox" name="fund" id="IncludeOther" value="3"/><span class="chkbox_text">All others (Individual, University, etc.)</span>
+       </td>
+    </tr><tr></tr><tr></tr>
+
+    <!-- Safety Issue -->
+    <tr>
+      <td class="adv_form_fields">
+        <a href="etacts/definitions#Safety" title="Help for Safety Issue search field" class="adv_form_link" target="_blank">Safety Issue</a>:
+      </td>
+      <td>
+	<input class="chkbox" type="checkbox" name="safe" id="SafetyIssue" value="Y"/><span class="chkbox_text">Has an outcome measure designated as a safety issue.</span>
+      </td>
+    </tr><tr></tr><tr></tr>
+
+    <!-- First Received -->
+    <tr>
+      <td class="adv_form_fields">
+        <a href="etacts/definitions#FirstReceived" class="adv_form_link" title="Help for First Received search field" target="_blank">First Received</a>:
+      </td>
+      <td>
+	<span class="date_text">from</span><input class="input_field field_text date" type="text" name="rcv_s" id="FirstReceivedStartDate" value=""/>
+	<span class="date_text">to</span><input class="input_field field_text date" type="text" name="rcv_e" id="FirstReceivedEndDate" value=""/><span class="date_text">(MM/DD/YYYY)</span>
+      </td>
+    </tr><tr></tr><tr></tr>
+
+    <!-- Last Updated -->
+    <tr>
+      <td class="adv_form_fields">
+        <a href="etacts/definitions#LastUpdated" class="adv_form_link" title="Help for Last Updated search field" target="_blank">Last Updated</a>:
+      </td>
+      <td>
+	<span class="date_text">from</span><input class="input_field field_text date" type="text" name="lup_s" id="LastUpdatedStartDate"/>
+	<span class="date_text">to</span><input class="input_field field_text date" type="text" name="lup_e" id="LastUpdatedEndDate"/><span class="date_text">(MM/DD/YYYY)</span>
+      </td>
+    </tr>
+</table>
+<div id="search_advs">
+  <input type="button" class="sbutton asearch" title="Submit Search" value="Search"/>
+  <a href="etacts/help" id="help_final_link" class="help_link" title="Show search help" target="_blank">Help</a>
+</div>
+</form>

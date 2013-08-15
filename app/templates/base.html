@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html lang="en" dir="ltr">
+<head>
+<title>eTACTS - Eligibility Tag Cloud-based Clinical Trial Search Engine</title>
+<meta charset="utf-8">
+
+<!-- metadata information -->
+<meta name="description" content=""/>
+<meta name="keywords" content="clinical trials, eligibility criteria, search"/>
+<meta name="robots" content="all, index, follow"/>
+<meta name="googlebot" content="all, index, follow"/><!-- GOOGLE -->
+<meta name="msnbot" content="all, index, follow"/><!-- MSN -->
+<meta name="slurp" content="all, index, follow"/><!-- YAHOO -->
+<meta name="copyright" content="columbia university"/>
+
+<!-- style -->
+<link rel="stylesheet" href="../static/css/layout.css" type="text/css">
+<link rel="stylesheet" href="../static/css/search.css" type="text/css">
+<link rel="stylesheet" href="../static/css/jqcloud.css" type="text/css">
+<link rel="stylesheet" href="../static/css/loader.css" type="text/css">
+
+<!-- javascript -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+<script>
+  window.jQuery || document.write ('<script src="{{ url_for('static',filename='js/jquery.js') }}">\x3C/script>')
+</script>
+<script type="text/javascript" src="../static/js/search.js"></script>
+<script type="text/javascript" src="../static/js/adv_search.js"></script>
+<script type="text/javascript" src="../static/js/jqcloud-1.0.3.js"></script>
+<script type="text/javascript" src="../static/js/tag_cloud.js"></script>
+<script type="text/javascript" src="../static/js/jquery.corner.js"></script>
+<script type=text/javascript>
+  var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+
+  function mail_no_spam(user,dominio) 
+    { document.location.href = "mailto:" + user + "@" + dominio + "?subject=eTACTS Feedback"; }
+</script>
+</head>
+
+<body>
+
+<div id="container">
+  <div id="header">
+    <h1>eTACTS - <span>Eligibility Tag Cloud-based Clinical Trial Search Engine</span></h1>
+  </div>
+  <div id="navigation">
+    <ul>
+      <li><a href="etacts">HOME</a></li>
+      <li><a href="http://people.dbmi.columbia.edu/~chw7007/software.html" target="blank">ABOUT</a></li>
+      <li><a href="javascript:mail_no_spam('cw2384','columbia.edu')" target="blank">FEEDBACK</a></li>
+    </ul>
+  </div>
+  <div id="content">
+    {% block content %}{% endblock %}
+  </div>
+</div>
+
+<div id="footer"><p> Copyright © 2013
+  <a href="http://www.dbmi.columbia.edu/" target="_blank">Department of Biomedical Informatics</a>,
+  <a href="http://www.columbia.edu/" target="_blank">Columbia University</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,338 @@
+/* search form */
+#search_form
+ { width: 95%;
+   margin: 10px auto 0px auto;
+   padding: 15px;
+   text-align: center;
+ }
+
+#ctgov_detail
+ { font-size: 100%;
+   color: #164785;
+   margin: 0px auto 10px auto;
+ }
+
+#ctgov_detail a
+ { font-weight: bold; 
+   color: #164785 !important;
+ }
+
+#ctgov_detail a:hover
+ { color: #164785; }
+
+#ctgov_number
+ { font-weight: bold; }
+
+#search_detail
+ { font-size: 100%;
+   color: #164785;
+   margin: 0;
+ }
+
+#search_example
+ { font-size: 80%;
+   color: #164785;
+   margin: 7px 7.25em 5px 2em;
+ }
+
+#search_text
+ { border: 1px solid #164785;
+   height: 20px;
+   margin: 0 5px 0 5px;
+ }
+
+.sbutton
+ { height: 20px;
+   border: 1px solid #164785;
+   background: #779BC3;
+   color: white;
+   padding: 0 10px 0 10px;
+ }
+
+.sbutton:hover
+ { cursor: pointer; }
+
+
+/* search result div */
+#header_results
+ { width: 95%;
+   margin: auto;
+   clear: both;
+ }
+
+#filter_header_results
+ { width: 95%;
+   margin: auto;
+   clear: both;
+ }
+
+#results
+ { width: 95%;
+   margin: auto;
+ }
+
+#filter_results
+ { width: 95%;
+   margin: auto;
+ }
+
+/* search table */
+#search_table
+ { font-size: 90%;
+   border-collapse: collapse;
+   border-top: 1px solid #ccc;
+   margin-top: 10px auto 10px auto;
+   width: 100%;
+ }
+
+#search_table tr
+ { border-bottom: 1px solid #ccc; }
+
+#search_table td
+ { padding-bottom: 10px;
+   padding-top: 5px;
+ }
+
+.rank
+ { width: 5%;
+   text-align: center;
+   font-weight: bold;
+   vertical-align: top;
+   color: green;
+ }
+
+.title
+ { text-align: justify;
+   vertical-align: top;
+ }
+
+#search_table td a
+ { text-decoration: None;
+   color: #164785 !important;
+   font-weight: bold;
+ }
+
+#search_table td a:hover 
+ { color: #779BC3; }
+
+
+/* recap label */
+.recap
+ { color: #164785;
+   font-size: 100%;
+   margin: 10px 0 8px 10px;
+ }
+
+.drecap
+ { color: #779BC3;
+   font-weight: bold;
+ }
+
+.filter
+ { margin: 5px 0 10px 20px;
+   font-size: 95%;
+   color: #164785;
+   font-weight: bold;
+ }
+
+.filter_link
+ { margin-left: 10px;
+   margin-right: 10px; 
+   color: green;
+ }
+
+.filter_na
+ { margin-left: 10px;
+   margin-right: 10px; 
+   color: red;
+ }
+
+.filter_link:hover
+ { text-decoration: underline;
+   cursor: pointer;
+ }
+
+/* detail table */
+.ct_detail
+ { width: 90%;
+   margin-top: 1px;
+   margin-left: 20px;
+   margin-right: 20px;
+   font-size: 95%;
+ }
+
+.ct_detail #dtitle
+ { color: black;
+   font-weight: bold;
+   vertical-align: top;
+   padding: 0;
+ }
+
+.ct_detail #dvalue
+ { text-align: justify;
+   width: 100%;
+   padding: 0;
+ }
+
+/* search navigation */
+#nav_search
+ { font-size: 100%;
+   color: #164785;
+   padding: 0;
+   text-align: center;
+   font-style: italic;
+ }
+
+.nav_page:hover
+ { color: #779BC3;
+   cursor: pointer;
+ }
+
+#rshow
+ { margin-left: 40px;
+   margin-right: 40px;
+ }
+
+#rprev
+ { margin: 0; }
+
+#rnext
+ { margin: 0; }
+
+#frprev
+ { margin: 0; }
+
+#frnext
+ { margin: 0; }
+
+
+/* advanced search */
+
+#adv_search_detail
+ { width: 95%;
+   margin: auto;
+   padding: 0;
+   display: none; 
+ }
+
+#close_advs
+ { width: 100%;
+   padding: 7px 0 7px 0;
+   text-align: right;
+   margin-bottom: 10px;
+   border-bottom: 1px solid #164785;
+ }
+
+#back_button
+ { margin-right: 5px;}
+
+.layout_table
+ { margin: 5px auto 5px auto;
+   padding: 5px;
+   width: 95%;
+ }
+
+.advs_header
+ { font-size: 95%;
+   color: #164785 !important;
+   margin: 0 0 5px 5px;
+ }
+
+.td
+ { vertical-align: middle; }
+
+.adv_form_fields
+ { text-align: right; 
+   padding: 5px 0 5px 0;
+   font-size: 90%;
+ }
+
+.adv_form_link
+ { color: #164785 !important;
+   font-weight: normal !important;
+ }
+
+.adv_form_link:hover
+ { text-decoration: underline; 
+   color: #164785 !important;
+ }
+
+.adv_form_link:visited
+ { color: #164785 !important; }
+
+.advs_type_title
+ { text-align:left;
+   font-size: 95%;
+   font-weight:bold;
+   padding-top: 20px;
+   padding-bottom: 5px;
+ }
+
+.input_field
+ { border: 1px solid #164785;
+   margin: 0 0 0 5px;
+   height: 20px;
+ }
+
+.field_text
+ { width: 250px; }
+
+.additional_check1
+ { margin: 0 0 0 7px; 
+   font-size: 70%;
+ }
+
+.additional_check2
+ { margin: 0 0 0 4px;
+   font-size: 70%;
+ }
+
+
+.location_info
+ { padding-top: 15px; }
+
+.small
+ { font-size: 85%; 
+   margin: 0;
+ }
+
+.chkbox
+ { margin: 0 4px 0 5px; 
+   font-size: 80%;
+}
+
+.chkbox_text
+ { color: black;
+   margin: 0 15px 0 0;
+   font-size: 90%;
+ }
+
+.date
+ { width: 80px; 
+   margin: 0 5px 0 5px;
+ }
+
+.date_text
+ { color: black;
+   margin: 0 0px 0 8px;
+   font-size: 90%;
+ }
+
+#search_advs
+ { width: 100%;
+   padding: 7px 0 7px 0;
+   text-align: right;
+   border-top: 1px solid #164785;
+ }
+
+#help_final_link
+ { margin: 0 10px 0 10px;
+   font-weight: bold;
+   color: #164785 !important;
+ }
+
+.help_link
+ { color: #164785 !important; }
+
+.help_link:hover
+ { text-decoration: underline; }

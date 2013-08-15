@@ -1,0 +1,31 @@
+Others|Activities & Behaviors|Behavior
+Others|Activities & Behaviors|Individual Behavior
+Chemical and Drugs|Chemicals & Drugs|Antibiotic
+Chemical and Drugs|Chemicals & Drugs|Biologically Active Substance
+Chemical and Drugs|Chemicals & Drugs|Chemical Viewed Functionally
+Chemical and Drugs|Chemicals & Drugs|Clinical Drug
+Chemical and Drugs|Chemicals & Drugs|Enzyme
+Chemical and Drugs|Chemicals & Drugs|Hazardous or Poisonous Substance
+Chemical and Drugs|Chemicals & Drugs|Inorganic Chemical
+Chemical and Drugs|Chemicals & Drugs|Organic Chemical
+Chemical and Drugs|Chemicals & Drugs|Pharmacologic Substance
+Chemical and Drugs|Chemicals & Drugs|Receptor
+Others|Concepts & Ideas|Group Attribute
+Disorders|Disorders|Acquired Abnormality
+Disorders|Disorders|Anatomical Abnormality
+Disorders|Disorders|Congenital Abnormality
+Disorders|Disorders|Disease or Syndrome
+Disorders|Disorders|Finding
+Disorders|Disorders|Injury or Poisoning
+Disorders|Disorders|Mental or Behavioral Dysfunction
+Disorders|Disorders|Neoplastic Process
+Disorders|Disorders|Pathologic Function
+Disorders|Disorders|Sign or Symptom
+Disorders|Disorders|Virus
+Laboratory and Tests|Phenomena|Laboratory or Test Result
+Others|Physiology|Clinical Attribute
+Others|Physiology|Mental Process
+Others|Physiology|Organism Function
+Others|Physiology|Organ or Tissue Function
+Procedures|Procedures|Diagnostic Procedure
+Procedures|Procedures|Therapeutic or Preventive Procedure
