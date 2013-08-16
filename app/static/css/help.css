@@ -51,6 +51,15 @@
    margin: 15px 5px 15px auto;
  }
 
+ /* about */
+ .grants
+  { color: green; 
+  	font-weight: bold;
+  }
+
+ p.system
+  { margin: 10px auto 0 25px;}
+
 
 
 

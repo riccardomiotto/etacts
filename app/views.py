@@ -21,15 +21,10 @@ def index ():
 
 
 # about page
-@app.route ('/about')
+@app.route ('/etacts/about')
 def about ():
+    print 'ciao'
     return render_template('about.html')
-
-
-# contact page
-@app.route ('/contact')
-def contact ():
-    return render_template('contact.html')
 
 
 # help page

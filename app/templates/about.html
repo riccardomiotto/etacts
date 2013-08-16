@@ -1,4 +1,41 @@
-{% extends "base.html" %}
+{% extends "reduced_base.html" %}
 {% block content %}
-<p class="recap"> coming soon ... </p>
+
+<div id="wrapper">
+<div id="help_detail">
+
+<p> One major limitation of existing clinical trial search engines is the underutilization of free-text eligibility criteria. Nevertheless, they contain details about eligible research volunteers that should be taken into account to provide meaningful and limited-size results to end users. To this aim we developed eTACTS, a novel interactive retrieval framework using common eligibility tags to dynamically filter clinical trial search results.</p>
+
+<p> eTACTS was developed at the <a href="http://www.dbmi.columbia.edu/" target="_blank">Department of Biomedical Informatics</a>, <a href="http://www.columbia.edu/" target="_blank">Columbia University</a>, New York, NY, USA. The principal investigator of the project is Dr. <a class='bold' href="http://people.dbmi.columbia.edu/~chw7007/" target="_blank">Chunhua Weng</a>. This work was supported by research grants <span class="grants">R01LM009886</span> and <span class="grants">R01LM010815</span> from the <a href="http://www.nlm.nih.gov/" target="_blank">National Library of Medicine</a>.</p>
+
+<p> eTACTS is optimized to work with recent versions of Chrome, Mozilla Firefox, and Safari. No tests were performed with any version of Internet Explorer.</p>
+
+<h3 id="HowToUse">Overview of the System</h3>
+  <p> eTACTS includes two components: (a) offline unsupervised tag mining and clinical trial indexing, and (b) online tag-based trial search. The system is linked to the <a href="http://www.clinicaltrials.gov" target="_blank">ClinicalTrials.gov</a> repository through the freely available API; data is updated internally on a daily basis over night.</p>
+
+  <p><span class="grants">(a) Unsupervised Tag Mining and Clinical Trial Indexing: </span> state-of-the-art methods to process eligiblity criteria parse clinical trials separately without considering any type of similarity among them. However, this leads to an uncontrolled vocabulary of annotations that is difficult to use in information retrieval systems because of its high dimensionality and of the likely presence of too specific or not relevant concepts. In contrast, we propose that cross-processing eligibility criteria from multiple studies to mine a UMLS-controlled vocabulary of tags that are shared by clinical trials can be a valuable alternative for automatic clinical trials indexing and retrieval. In this context, a tag is defined as a meaningful multi-word pattern in the free-text eligibility criteria (e.g.,"breast carcinoma", "diabetes", "active malignancy") that frequently appears within a collection of clinical trials. A collection of tags defines a controlled vocabulary. Therefore, we used an unsupervised, fully automatic data mining approach to discover a controlled vocabulary of tags for eligibility criteria frequently shared across clinical trials, and used these tags for efficient trial indexing and retrieval.</p>
+
+  <p><span class="grants">(b) Tag-based Clinical Trial Retrieval: </span> the compact representation of eligibility criteria based on a controlled vocabulary of tags can favor interactive retrieval of clinical trials because these tags are likely to be more generic and intuitive (given their high frequency nature) than independent annotations. Consequently, we developed eTACTS, a clinical trial search engine, which exploits a tag cloud of tags to help users filtering the resulting trials of a simple search. After, an initial search (free-text query or advanced form-based), a tag cloud is generated with respect to the current results and presented to the user. When the user selects any tag, eTACTS retains only the trials containing the chosen tag in their eligibility criteria and suggests a new cloud based on the tag distribution in the remaining trials, which contain all the selected tags in their eligibility criteria. The process iterates until a desired number of trials are returned.</p>
+
+<h3 id="HowToUse">Code</h3>
+  <p> The code for running locally eTACTS is avaialble for download <a class='bold hightlight' href="https://github.com/riccardomiotto/etacts" target="_blank">here</a>. Note that, while the downloadable code is up to date with the online version, the data (i.e., clinical trials descriptions, controlled vocabulary, association rule) is not. If you needThe If you need to use the the clinical trial descriptions in this downloadable version are not up to date. For real-time updated repository, use the online version. </p>
+
+<h3 id="HowToUse">References</h3>
+<ul>
+  <li>
+    <p> Miotto, R., Jiang, S., Weng, C. (2013). <a href="http://www.sciencedirect.com/science/article/pii/S1532046413001159" target="_blank">eTACTS: A Method for Dynamically Filtering Clinical Trial Search Results</a>. <i>Journal of Biomedical Informatics</i>, in press.</p>
+  </li>
+
+  <li>
+    <p> Miotto, R., Weng, C. (2013). <strong>Unsupervised Mining of Frequent Tags for Clinical Eligibility Text Indexing</strong>. <i>Journal of Biomedical Informatics</i>, under second review.</p>
+  </li>
+
+  <li>
+    <p> Miotto, R., Weng, C. (2013). <strong>eTACTS: an Eligibility Tag Cloud-based Clinical Trial Search Engine</strong>. Proc. of the <i>AMIA Fall Symposium, abstract for system demonstration</i>, in press.</p>
+  </li>
+</ul>
+<br>
+
+</div>
+</div>
 {% endblock %}
