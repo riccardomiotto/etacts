@@ -4,7 +4,7 @@ Search engine for clinical trials allowing users to refine the results of an ini
 through cloud of tags automatically extracted from the eligibility criteria.
 
 This copy is for local testing only and does not include the update of the clinical trial 
-repository. The up to date version of the system is only available online at: http://is.gd/eTACTS.
+repository. The up to date version of the system is only available online at: http://etacts.elasticbeanstalk.com/etacts.
 
 This work was done at Columbia University, New York, USA and supported by grants R01LM009886 
 and R01LM010815 from the National Library of Medicine. For more details, see:
